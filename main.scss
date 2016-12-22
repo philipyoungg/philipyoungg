@@ -1,0 +1,62 @@
+h1 {
+  line-height: 1.25;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin-top: 3rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: hsl(0, 0%, 60%);
+  margin: 0;
+}
+
+hr {
+  margin: 6rem 0;
+}
+
+ul, ol {
+  padding-left: 1rem;
+}
+
+a {
+  color: mediumblue;
+}
+
+a.active {
+  background: mediumblue;
+  color: white;
+}
+
+a > i:before {
+  font-size: 0.5em;
+  margin-left: 0.5em;
+}
+
+a:hover, .main-highlight {
+  background: mediumblue;
+  color: white;
+}
+
+
+@media screen and (max-width: 30em) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    margin-top: 4rem;
+  }
+  hr {
+    margin: 3rem 0;
+  }
+}

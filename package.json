@@ -1,0 +1,14 @@
+{
+  "name": "philipyoungg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "harp server & browser-sync start --proxy 'localhost:9000' --files *",
+    "publish": "harp compile && cd www && surge"
+  },
+  "keywords": [],
+  "author": "Philip Young Gunawan <hello@philipyoungg.com> (http://www.philipyoungg.com)",
+  "license": "ISC"
+}

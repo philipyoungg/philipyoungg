@@ -1,0 +1,22 @@
+doctype
+html
+  head
+    meta(name='viewport' content='width=device-width' initial-scale='1.0' charset='utf-8')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.1/tachyons.min.css')
+    link(rel="stylesheet" href="/main.css")
+    link(href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet")
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+    title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
+    meta(name="description" content="#{ description }")
+  body.bg-near-white.f5-m.f4-ns.lh-copy(style='font-family: Inconsolata')
+    != partial('_shared/nav')
+    .mw8.center.pa4.pa6-ns
+        if current.path[0] === 'thoughts' && current.path[1] !== 'index'
+            h6= public.thoughts._data[current.path[1]].date
+            h1= public.thoughts._data[current.path[1]].title
+            != yield
+            hr
+            != partial('_shared/read-also')
+        else
+           != yield
+            != partial('_shared/blog-excerpt') 

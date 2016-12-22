@@ -1,0 +1,7 @@
+.mb3.mb5-ns
+    h2.f2.f1-ns.ma0.lh-title.sans-serif Other thoughts
+each post, slug in public.thoughts._data
+  .b--light-gray.bt.pv2.pv3-ns
+    h6.f6.f5-ns.ma0= post.date
+    h2.f4.f3-m.f2-ns.mt2.lh-title.tracked-tight-m
+      a(href='/thoughts/' + slug)= post.title
