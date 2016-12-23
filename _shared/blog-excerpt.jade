@@ -5,11 +5,12 @@
 .mb3.mb5-ns
     h2.f2.f1-ns.ma0.lh-title.sans-serif Thoughts
 each post, slug in public.thoughts._data
-    .b--light-gray.bt.pv3.pv4-ns
+    .b--black-10.bt.pv4.pv5-ns
         h6.f6.f5-ns.ma0= post.date
-        h2.f4.f3-m.f2-ns.mt2.lh-title.tracked-tight-m= post.title
+        h2.f4.f3-m.f2-ns.mt2.lh-title.tracked-tight-m
+          a(href='/thoughts/#{ slug }')= post.title
         != excerpt(partial('../thoughts/' + slug))
-        p
+        p.mb0
           a(href='/thoughts/#{ slug }') Read more &rarr;
 //- .b--light-gray.bt.pv4
 //-     h6.f6.f5-ns.ma0.o-40 Jan 20, 2016

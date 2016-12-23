@@ -8,24 +8,10 @@ html
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
     title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
     meta(name="description" content="#{ description }")
-    script(src='externalLinkToNewTab.js')
   body.bg-near-white.f5-m.f4-ns.lh-copy(style='font-family: Inconsolata')
     != partial('_shared/nav')
-    .mw8.center.pa4.ph6-ns.pv5-ns
-      if current.path[0] === 'thoughts' && current.path[1] !== 'index'
-        h6= public.thoughts._data[current.path[1]].date
-        h1= public.thoughts._data[current.path[1]].title
-        != yield
-        hr
-        #disqus_thread
-        hr
-        != partial('_shared/read-also')
-      else
-        != yield
-        != partial('_shared/blog-excerpt')
-  script.
-    externalLinkToNewTab();
-
+    .mw8.center.pa4.pa6-ns
+      !=yield
   script.
     <!--Start of Tawk.to Script-->
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -45,14 +31,3 @@ html
 
     ga('create', 'UA-51658519-1', 'auto');
     ga('send', 'pageview');
-  script.
-    var disqus_config = function () {
-      this.page.url = window.location;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = window.location; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      };
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = '//philipyoungg-com.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();

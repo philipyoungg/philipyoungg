@@ -1,11 +1,16 @@
-{
+{ 
+  "all-blogposts-gone": {
+    "title": "All blogposts—gone 😭",
+    "date": "4 November 2016",
+    "description": "My blog posts from last 3 years are all gone. The hosting provider told that they didn't kept any backup (lesson learned: backup). Meanwhile, I tried to manually add posts that saved on my local computer."
+  },
   "change-your-life-change-your-environment": {
     "title": "How to change your life: Start changing your environment",
     "date": "14 September 2016",
     "description": "Changing your life is not that hard. Knowing this one trick could help wonders."
   },
   "employed-vs-self-employed-my-decision-after-graduation": {
-    "title": "On Graduation",
+    "title": "Employed Vs Self Employed: My Decision After Graduation",
     "date": "21 March 2016",
     "description": "2015 is one of my productive and life changing year ever. I learned a ton, achieved a ton, and sadly—lost tons of time here. This is also the same year I graduated from college and entered adult life. At last, I can focus on what matters now."
   },
