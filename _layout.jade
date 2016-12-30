@@ -4,27 +4,33 @@ html
     meta(name='viewport' content='width=device-width' initial-scale='1.0' charset='utf-8')
     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.1/tachyons.min.css')
     link(rel="stylesheet" href="/main.css")
-    link(href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto" rel="stylesheet")
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
     title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
     meta(name="description" content="#{ description }")
-    script(src='externalLinkToNewTab.js')
-  body.bg-near-white.f5-m.f4-ns.lh-copy(style='font-family: Inconsolata')
+    script(src='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.min.js')
+    link(href='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.css' rel='stylesheet')
+    //- script(src='https://cdn.rawgit.com/philipyoungg/lazyload/master/lazyload.min.js')
+    //- link(href='https://cdn.rawgit.com/philipyoungg/lazyload/master/lazyload.css' rel='stylesheet')
+  body.bg-near-white.f5-m.f4-ns.lh-copy.inconsolata
     != partial('_shared/nav')
-    .mw8.center.pa4.ph6-ns.pv5-ns
+    .center.pa4.pa5-ns(style="max-width: 50rem")
       if current.path[0] === 'thoughts' && current.path[1] !== 'index'
-        h6= public.thoughts._data[current.path[1]].date
-        h1= public.thoughts._data[current.path[1]].title
-        != yield
-        hr
-        #disqus_thread
-        hr
-        != partial('_shared/read-also')
+        .article.hover-internal
+          h6= public.thoughts._data[current.path[1]].date
+          h1= public.thoughts._data[current.path[1]].title
+          != yield
+          hr
+          #disqus_thread
+          hr
+          != partial('_shared/blog-excerpt')
       else
-        != yield
-        != partial('_shared/blog-excerpt')
+        .hover-internal.measure-wide
+          != yield
+          != partial('_shared/blog-excerpt')
   script.
     externalLinkToNewTab();
+    lazyLoad();
 
   script.
     <!--Start of Tawk.to Script-->

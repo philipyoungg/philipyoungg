@@ -1,72 +1,129 @@
-h1 {
-  line-height: 1.25;
-  margin-bottom: 3rem;
-  margin-top: 0.5rem;
-  font-size: 2.25rem;
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-h2 {
-  font-size: 1.5rem;
-  line-height: 1.25;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
+.inconsolata {
+  font-family: Inconsolata, monospace;
 }
 
-h3 {
-  margin-top: 3rem;
-}
-
-h6 {
-  font-size: 1rem;
-  color: hsl(0, 0%, 60%);
-  margin: 0;
+.apple-system {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 hr {
   margin: 6rem auto;
   height: 1px;
   border: 0;
-  background-color: hsl(0, 0%, 80%);
+  background-color: #ddd;
   width: 90%;
   max-width: 40rem;
 }
 
-ul, ol {
-  padding-left: 1rem;
-}
-
-a {
-  color: mediumblue;
-}
-
-a.active {
-  background: mediumblue;
-  color: white;
-}
-
-a > i:before {
-  font-size: 0.5em;
-  margin-left: 0.5em;
-}
-
-a:hover, .main-highlight {
-  background: mediumblue;
-  color: white;
-}
-
-@media screen and (max-width: 30em) {
-  h1 {
-    font-size: 1.5rem;
-    letter-spacing: -0.025em;
+.hover-internal {
+  p a {
+    position: relative;
+    color: mediumblue;
   }
-  h2 {
+  p a.active {
+    background: mediumblue;
+    color: white;
+  }
+  p a > i:before {
+    font-size: 0.5em;
+    margin-left: 0.5em;
+  }
+  p a:hover,
+  .main-highlight {
+    background: mediumblue;
+    color: white;
+  }
+}
+
+.article {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, roboto;
+  > h1 {
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont;
+  }
+  > h2 {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 3rem;
+    margin-top: 7rem;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont;
+  }
+  @media screen and (min-width: 30em) and (max-width: 60em) {
+    > h3,
+    h4,
+    h5,
+    h6,
+    p {
+      max-width: 35em;
+    }
+    > h1 {
+      font-size: 2rem;
+      max-width: 15em;
+    }
+    > h2 {
+      font-size: 1.5rem;
+      margin-top: 5rem;
+      max-width: 15em;
+    }
+  }
+  > h3 {
     margin-top: 4rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
   }
-  hr {
-    margin: 3rem auto;
-    width: 80%;
+  > h4 {
+    margin-top: 3rem;
+  }
+  > h6 {
+    font-family: inconsolata;
+    font-size: 1rem;
+    color: hsl(0, 0%, 60%);
+    margin: 0;
+    &:first-child {
+      display: inline-block;
+      width: 12rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  > ul,
+  > ol {
+    padding-left: 1rem;
+  }
+  > p + h6 {
+    margin-top: -1rem;
+  }
+  > p {
+    font-family: Inconsolata;
+  }
+  @media screen and (max-width: 30em) {
+    > h1 {
+      font-size: 1.5rem;
+      letter-spacing: -0.05em;
+    }
+    > h2 {
+      margin-top: 4rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      letter-spacing: -0.05em;
+    }
+    > hr {
+      margin: 3rem auto;
+      width: 80%;
+    }
+    > p > img {
+      margin-left: calc(-2rem);
+      max-width: calc(100% + 4rem);
+    }
   }
 }

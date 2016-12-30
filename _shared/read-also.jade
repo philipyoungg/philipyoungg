@@ -2,7 +2,13 @@
     h2.f2.f1-ns.ma0.lh-title.sans-serif Other thoughts
 each post, slug in public.thoughts._data
   if current.path[1] !== slug
-    .b--black-10.bt.pv3.pv4-ns
-      h6.f6.f5-ns.ma0= post.date
+    .pv3.pv4-ns
+      h6.f6.f5-ns.ma0.pb2.mb3.w5.b--black-10.bb.black-50.inconsolata= post.date
       h2.f4.f3-m.f2-ns.mt2.lh-title.tracked-tight-m.mb0
-        a(href='/thoughts/' + slug)= post.title
+        a.link(href='/thoughts/' + slug)= post.title
+      p.mb0.inconsolata
+          a(href='/thoughts/#{ slug }') Read this &rarr;
+
+
+        //- h6.f6.f5-ns.ma0.pb2.mb3.w5.b--black-10.bb.black-50= post.date
+        //- h2.f2.mt2.lh-title.tracked-tight-m.measure-narrow.apple-system

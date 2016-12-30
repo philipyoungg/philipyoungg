@@ -4,9 +4,8 @@ Society interpret design as sketches, painting, packaging. Some of them take it 
 
 Have you ever seen a beautiful home? That is a result of good design. Software or Application? Both also example of design. A questionnaire, organizational hierarchy, or even—business structure? That's also design. To get the same idea of what design actually are, let's see design on the same perspective.
 
-###### ![Eames House: Case Study House no. 8](http://interactive.wttw.com/sites/default/files/HO_INt182tsp.jpg) Eames House: Case Study House no. 8
-
-
+![Eames House: Case Study House no. 8](http://interactive.wttw.com/sites/default/files/HO_INt182tsp.jpg) 
+###### Eames House: Case Study House no. 8
 
 Google define design as: do or plan (something) with a specific purpose or intention in mind. 
 
@@ -24,7 +23,8 @@ Sure, the home is beautiful—but it isn't solve the owner's problem. It only so
 
 ## Art VS Design
 
-###### ![David Sculpture - Michelangelo](http://media.web.britannica.com/eb-media/87/60287-050-5124A0CE.jpg) David Sculpture - Michelangelo
+![David Sculpture - Michelangelo](http://media.web.britannica.com/eb-media/87/60287-050-5124A0CE.jpg) 
+###### David Sculpture - Michelangelo
 
 It is important to differentiate between design and art. Design is objective, while art is subjective. Good designer solves problem. Even an ugly website with excellent functionality are a much—better design than beautiful website with bad functionality. 
 
@@ -34,7 +34,8 @@ The best designer excels at both area: they plan and research logically, and cra
 
 ## 10 Principle of Good Design
 
-###### ![Dieter Rams](http://b.fastcompany.net/multisite_files/codesign/imagecache/1280/article_feature/vitsoe-dieter-rams-portrait-by-anne-brassier.jpg) Dieter Rams
+![Dieter Rams](http://b.fastcompany.net/multisite_files/codesign/imagecache/1280/article_feature/vitsoe-dieter-rams-portrait-by-anne-brassier.jpg) 
+###### Dieter Rams
 
 World famous industrial designer—Dieter Rams—formulated a design manifesto called "10 Principle of Good Design" to ease us with what is a good definition of good design. According to him, good design are:
 
@@ -72,11 +73,13 @@ Less, but better – because it concentrates on the essential aspects, and the p
 
 Fulfilling 10 Principle of Good Design are hard to be applied broadly. For example, fashion design are notoriously opposed any industrial designer—because it's not environmental friendly and only follows trend. It didn't last long. After the trends end, the design become obsolete.
 
-###### ![Project Ara - Google](http://cdn.slashgear.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.43.33-AM.png) Project Ara - Google
+![Project Ara - Google](http://cdn.slashgear.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.43.33-AM.png) 
+###### Project Ara - Google
 
 Other than that, smartphone industry also getting the same cynical approaches. They argue that smartphone should be made with leaves, plastic, or other material that could be easily disposed and recyclable. Thankfully, Google's Project Ara are working on this issue—and in the future, we can expect smartphone to be more environmental friendly.
 
-###### ![Olympus OM-1 VS Olympus OM-D](http://farm8.staticflickr.com/7053/6810504718_eac1b0c1c3_o.jpg?__SQUARESPACE_CACHEVERSION=1330974734203) Olympus OM-1 VS Olympus OM-D
+![Olympus OM-1 VS Olympus OM-D](http://farm8.staticflickr.com/7053/6810504718_eac1b0c1c3_o.jpg?__SQUARESPACE_CACHEVERSION=1330974734203) 
+###### Olympus OM-1 VS Olympus OM-D
 
 Honest design didn't manipulate consumer perspective. This simplest rule are often not followed by many company. Take Olympus OM-D as an example. While this famous product is praised by many expert it still considered as unhonest design. Olympus OM-D use an older design; therefore people expect it to work with film, not digital. HTC Dream also get the same sentiment with its superfluous camera with mediocre quality.
 
@@ -103,7 +106,8 @@ Graphic designer objective is to deliver messages with media they chooses.
 
 #### Print Design
 
-###### ![Linotype Movie Poster](http://moorewoodtype.com/wp-content/uploads/2012/08/LinotypePoster_Cinci.jpg) Linotype Movie Poster
+![Linotype Movie Poster](http://moorewoodtype.com/wp-content/uploads/2012/08/LinotypePoster_Cinci.jpg) 
+###### Linotype Movie Poster
 
 Before the widespread uses of computer, website, and application—all graphic designer are working on print media. Print media are included but not limited to posters, magazine, billboard, books, and flyer. Typography, color accuracy, and traditional printing process are expected to be studied by print designer. 
 
@@ -112,7 +116,8 @@ Anything that could be seen, touched, and are printed in flat surface are consid
   
 #### Digital Design
 
-###### ![Monument Valley: an iOS game](https://lh3.ggpht.com/ATkqNnZPkc4NPNRx-Ta79moQqMDlJD1bLHYnaB4bcKje-FCBs-UdPGAmKv-EtQWM_kc=h900) Monument Valley: an iOS game
+![Monument Valley: an iOS game](https://lh3.ggpht.com/ATkqNnZPkc4NPNRx-Ta79moQqMDlJD1bLHYnaB4bcKje-FCBs-UdPGAmKv-EtQWM_kc=h900) 
+###### Monument Valley: an iOS game
 
 The rise of computer and internet makes a new whole world of design possible by doing it digitally. Adobe's product are famously playing in this area with Photoshop, Illustrator, InDesign, Lightroom, After Effects, and lots more.
 
@@ -123,7 +128,8 @@ While digital design are intangible, designer can still "design" the interaction
 
 #### User Interface Design
 
-###### ![iTunes Concept Redesign by Brye Kobayashi](https://farm3.staticflickr.com/2913/14245507113_c3b85064e9_o.jpg) iTunes Concept Redesign by Brye Kobayashi
+![iTunes Concept Redesign by Brye Kobayashi](https://farm3.staticflickr.com/2913/14245507113_c3b85064e9_o.jpg) 
+###### iTunes Concept Redesign by Brye Kobayashi
 
 User Interface (UI) design is the design of software or websites with the focus on the user's experience and interaction. The goal of user interface design is to make the user's interaction as simple and efficient as possible. Good user interface design puts emphasis on goals and completing tasks, and good UI design never draws more attention to itself than enforcing user goals.
 
@@ -131,7 +137,8 @@ User Interface (UI) design is the design of software or websites with the focus 
 
 #### User Experience Design
 
-###### ![Wikipedia UX Redesign by George Kvasnikov](https://m1.behance.net/rendition/modules/111672373/disp/ea0383cc851e5a4b1d7b8b27821d56c2.gif) Wikipedia UX Redesign by George Kvasnikov
+![Wikipedia UX Redesign by George Kvasnikov](https://m1.behance.net/rendition/modules/111672373/disp/ea0383cc851e5a4b1d7b8b27821d56c2.gif) 
+###### Wikipedia UX Redesign by George Kvasnikov
 
 User Experience (UX) design "incorporates aspects of psychology, anthropology, sociology, computer science, graphic design, industrial design and cognitive science. Depending on the purpose of the product, UX may also involve content design disciplines such as communication design, instructional design, or game design."
 
@@ -139,7 +146,8 @@ The goal of UX design is to create a seamless, simple, and useful interaction be
 
 ### Industrial Design
 
-###### ![Thonet Chair no. 14](http://im.thonet.de/im/productDetail/front%2Fimages%2F5000%2FThonet_Stuhl__214__FS0_1.jpg) Thonet Chair no. 14
+![Thonet Chair no. 14](http://im.thonet.de/im/productDetail/front%2Fimages%2F5000%2FThonet_Stuhl__214__FS0_1.jpg) 
+###### Thonet Chair no. 14
 
 Industrial designers create physical products designated for mass-consumption by millions of people. Motorcycles, iPods, and toothbrushes, are all designed by industrial designers. These people are masters of physical goods and innovation within the constraints of production lines and machines.
 

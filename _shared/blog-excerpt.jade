@@ -3,27 +3,12 @@
 -  }
 
 .mb3.mb5-ns
-    h2.f2.f1-ns.ma0.lh-title.sans-serif Thoughts
+    h2.f2.f1-ns.ma0.lh-title.apple-system Thoughts
 each post, slug in public.thoughts._data
-    .b--black-10.bt.pv4.pv5-ns
-        h6.f6.f5-ns.ma0= post.date
-        h2.f4.f3-m.f2-ns.mt2.lh-title.tracked-tight-m
-          a(href='/thoughts/#{ slug }')= post.title
+    .pv3.pv4-ns.inconsolata
+        h6.f6.f5-ns.ma0.pb2.mb1.mb3.w5.b--black-10.bb.black-50.b= post.date
+        h2.f4.f3-m.f2-ns.mt2.lh-title.measure-narrow.apple-system.measure-narrow
+          a.link.black-80(href='/thoughts/#{ slug }')= post.title
         != excerpt(partial('../thoughts/' + slug))
-        p.mb0
+        p.mb0.inconsolata
           a(href='/thoughts/#{ slug }') Read more &rarr;
-//- .b--light-gray.bt.pv4
-//-     h6.f6.f5-ns.ma0.o-40 Jan 20, 2016
-//-     h2.f4.f3-m.f2-ns.mt2.lh-title.tracked-tight-m All blogpost, gone.
-//-     p My blog posts from last 3 years are all gone. The hosting provider told that they didn’t kept any backup (lesson learned: backup). Meanwhile, I tried to manually add posts that saved on my local computer.
-//-     a(href='/missing-article') Read more &rarr;
-//- .b--light-gray.bt.pv4
-//-     h6.f6.f5-ns.ma0.o-40 Jan 20, 2016
-//-     h2.f4.f3-m.f2-ns.mt2.lh-title.tracked-tight-m How to change your life: Start by changing your environment
-//-     p He grew to love design while attending brand lecture on Prasetiya Mulya School of Business and Economics. Ever since then, he religiously practice his design skill and publish several works on Behance.
-//-     a(href='/missing-article') Read more &rarr;
-//- .b--light-gray.bt.pv4
-//-     h6.f6.f5-ns.ma0.o-40 Jan 20, 2016
-//-     h2.f4.f3-m.f2-ns.mt2.lh-title.tracked-tight-m Employed vs Self Employed: My Decision After Graduation
-//-     p 2015 is one of my productive and life changing year ever. I learned a ton, achieved a ton, and sadly—lost tons of time here. This is also the same year I graduated from college and entered adult life. At last, I can focus on what matters now.
-//-     a(href='/missing-article') Read more &rarr;
