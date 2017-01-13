@@ -13,5 +13,8 @@
   },
   "sitemap.xml": {
     "layout": false
+  },
+  "contentful": {
+    "title": "Cover letter for Contentful"
   }
 }

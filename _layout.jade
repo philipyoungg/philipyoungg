@@ -7,11 +7,10 @@ html
     link(href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto" rel="stylesheet")
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
     title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
-    meta(name="description" content="#{ description }")
+    meta(name="description" content=description ? description : public._data.index.description)
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='jquery.scrolldepth.min.js')
     script(src='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.min.js')
-    link(href='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.css' rel='stylesheet')
-    //- script(src='https://cdn.rawgit.com/philipyoungg/lazyload/master/lazyload.min.js')
-    //- link(href='https://cdn.rawgit.com/philipyoungg/lazyload/master/lazyload.css' rel='stylesheet')
   body.bg-near-white.f5-m.f4-ns.lh-copy.inconsolata
     != partial('_shared/nav')
     .center.pa4.pa5-ns(style="max-width: 50rem")
@@ -21,44 +20,47 @@ html
           h1= public.thoughts._data[current.path[1]].title
           != yield
           hr
+          form.input-reset#mc-embedded-subscribe-form.validate(action='//philipyoungg.us13.list-manage.com/subscribe/post?u=33f874b3a49f847d9180f003c&id=97773fd0be', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+            p.apple-system.f6.black-70.measure-wide.mb4 If you like this essay, you can subscribe to my newsletter!  I share about productivity, personal learnings, and freebies every once in a while. 
+              span.black ⚡️
+            #mc_embed_signup_scroll
+              input.f6.b--black-20.br1.pa2.w5.mr1.outline-0(style='border-width: 1px' placeholder='awesome@amazing.com' type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required)
+              div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                input(type='text', name='b_33f874b3a49f847d9180f003c_97773fd0be', tabindex='-1', value='')
+              .clear.dib
+                input#mc-embedded-subscribe.f6.ba.b--black-20.pa2.br1.bg-blue.white.dim.pointer(type='submit', value='Send me!', name='subscribe')
+
+          //- form.input-reset(action="//philipyoungg.us13.list-manage.com/subscribe/post?u=33f874b3a49f847d9180f003c&amp;id=97773fd0be" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
+          //-   #mc_embed_signup_scroll
+            
+          //-   button.f6.ba.b--black-20.pa2.br1.bg-blue.white.dim.pointer(type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button") Send me!
+          hr
           #disqus_thread
           hr
           != partial('_shared/blog-excerpt')
+      else if current.path[0] === 'contentful'
+        .hover-internal.measure-wide
+          != yield
       else
         .hover-internal.measure-wide
           != yield
           != partial('_shared/blog-excerpt')
-  script.
-    externalLinkToNewTab();
-    lazyLoad();
-
-  script.
-    <!--Start of Tawk.to Script-->
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5734a7777a3ac52f0f9f14e7/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-  script.
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-51658519-1', 'auto');
-    ga('send', 'pageview');
-  script.
-    var disqus_config = function () {
-      this.page.url = window.location;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = window.location; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    != partial('_shared/footer')
+    script.
+      // Disqus
+      // =======================================
+      var disqus_config = function () {
+        this.page.url = window.location;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = window.location; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
       (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = '//philipyoungg-com.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+        var d = document, s = d.createElement('script');
+        s.src = '//philipyoungg-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
       })();
+
+  script(src='tracker.js')
+  script.
+    externalLinkToNewTab();
+  script(src="//load.sumome.com/" data-sumo-site-id="55162b7725bdda04eb81ba851beb247985b2a15bc5110db679987d8e45c3ff1e" async="async")
