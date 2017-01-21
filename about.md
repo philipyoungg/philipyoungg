@@ -2,7 +2,9 @@
 
 He learned to love design after attending branding class at Prasetiya Mulya University. He has been designing ever since. Selected works are available on [Behance](https://www.behance.net/philipyoungg) 🙇. 
 
-Seeing his passion, he was trusted to handle various projects. To name a few: formulating a brand guideline an Indonesian mimimarket [Sanmart](https://www.behance.net/gallery/17555133/Sanmart) and designing his university's [olympics identity and sport mascot](https://www.behance.net/gallery/17551609/House-of-Prasetiya-Mulya). Now he is doing research, designing product 🔧, and brand identity for [Bukapintu.co](https://www.bukapintu.co/).
+Seeing his passion, he was trusted to handle various projects. To name a few: formulating a brand guideline an Indonesian mimimarket [Sanmart](https://www.behance.net/gallery/17555133/Sanmart), designing his university's [olympics identity and sport mascot](https://www.behance.net/gallery/17551609/House-of-Prasetiya-Mulya), and designing website for [doyoutravel](http://www.doyoutravelphoto.com)—a famous Instagram influencer. 
+
+Now he is doing research, designing product 🔧, and brand identity for [Bukapintu.co](https://www.bukapintu.co/).
 
 To master his craft, Philip also learn web development on 2016 💻. He is comfortable with React, Redux, RXJS Observable Pattern, Node.js, SASS, and PostgreSQL. He uploaded his side projects on [Github](http://github.com/philipyoungg/).
 
