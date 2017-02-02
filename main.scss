@@ -2,6 +2,24 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+select {
+  &:after {
+    content: 'shit';
+    z-index: 1;
+  }
+}
+
 .inconsolata {
   font-family: Inconsolata, monospace;
 }

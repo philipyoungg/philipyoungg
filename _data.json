@@ -14,7 +14,16 @@
   "sitemap.xml": {
     "layout": false
   },
-  "contentful": {
-    "title": "Cover letter for Contentful"
+  "about": {
+    "title": "About",
+    "description": "Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co"
+  },
+  "inquiry": {
+    "title": "Work Inquiry",
+    "description": "Work inquiry"
+  },
+  "thanks": {
+    "title": "Thanks",
+    "description": "Thank you"
   }
 }
