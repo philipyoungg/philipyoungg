@@ -1,6 +1,6 @@
-<span class="main-highlight">My name is Philip Young</span>! I'm a product designer, brand designer, and web developer from Jakarta, Indonesia 🇮🇩.
+My name is Philip Young. I'm a multidisciplinary designer and developer from Jakarta, Indonesia 🇮🇩.
 
-I was trusted to handle various projects. To name a few: formulating a brand guideline an Indonesian mini market [Sanmart](https://www.behance.net/gallery/17555133/Sanmart), creating brand identity and product design for [Bukapintu.co](https://www.bukapintu.co), and designing photo essays website for [doyoutravel](http://www.doyoutravelphoto.com) (1.8M followers).
+I was trusted to handle various projects. To name a few: formulating brand guideline for Indonesian mini market—[Sanmart](https://www.behance.net/gallery/17555133/Sanmart), creating brand identity and product design for [Bukapintu.co](https://www.bukapintu.co), and designing photo essays website for [doyoutravel](http://www.doyoutravelphoto.com) (1.8M followers).
 
 Other selected works are available on [Dribbble](https://dribbble.com/philipyoungg) and [Behance](https://www.behance.net/philipyoungg) 🙇.
 
