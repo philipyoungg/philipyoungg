@@ -1,8 +1,8 @@
-My name is Philip Young. I'm a multidisciplinary designer and developer from Jakarta, Indonesia 🇮🇩.
+My name is Philip Young 👋. I'm a multidisciplinary designer and developer from Jakarta, Indonesia 🇮🇩.
 
 I was trusted to handle various projects. To name a few: formulating brand guideline for Indonesian mini market—[Sanmart](https://www.behance.net/gallery/17555133/Sanmart), creating brand identity and product design for [Bukapintu.co](https://www.bukapintu.co), and designing photo essays website for [doyoutravel](http://www.doyoutravelphoto.com) (1.8M followers).
 
-Other selected works are available on [Dribbble](https://dribbble.com/philipyoungg) and [Behance](https://www.behance.net/philipyoungg) 🙇.
+You can find my other works on [Behance](https://www.behance.net/philipyoungg) and [Dribbble](https://dribbble.com/philipyoungg) 🙇.
 
 From web development side; I'm comfortable with React, Redux, RXJS Observable Pattern, Node.js, SASS, and PostgreSQL. You can see my side projects on [Github](http://github.com/philipyoungg/).
 

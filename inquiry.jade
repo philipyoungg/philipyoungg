@@ -4,30 +4,30 @@ h2.f6.f5-ns.tc.mt0.mb4.normal Currently available for short and long-term projec
 form.center(method='POST', style='max-width: 40rem' action='https://formspree.io/hello@philipyoungg.com')
   .cf
     .fl.w-100.w-50-ns.ph0.ph2-ns.pv2.pv3-ns
-      input(type='hidden', name='_next', value='https://philipyoungg.com/thanks')
+      input(type='hidden', name='_next', value='http://www.philipyoungg.com/thanks')
       input(type='hidden', name='_subject', value='Project Inquiry!')
       input(type='text', name='_gotcha', style='display:none')
       label.f5.db.mb2(for='') Your Name
       input.input-reset.f5.sans-serif.w-100.br1.pa3.bg-white.b--black-20(name='name', placeholder='Name', type='text')
     .fl.w-100.w-50-ns.ph0.ph2-ns.pv2.pv3-ns
       label.f5.db.mb2(for='') Email
-      input.input-reset.f5.sans-serif.w-100.br1.pa3.bg-white.b--black-20(name='email', type='email', placeholder='Email')
+      input.input-reset.f5.sans-serif.w-100.br1.pa3.bg-white.b--black-20(name='_replyto', type='email', placeholder='Email')
     .fl.w-100.w-50-ns.ph0.ph2-ns.pv2.pv3-ns
       label.f5.db.mb2(for='') Entity
       input.input-reset.f5.sans-serif.w-100.br1.pa3.bg-white.b--black-20(name='entity', placeholder='Personal / Entity Name', type='text')
     .fl.w-100.w-50-ns.ph0.ph2-ns.pv2.pv3-ns
       label.f5.db.mb2(for='') Budget
       div.relative(style='height: 54px')
-        select.input-reset.f5.sans-serif.w-100.br1.pa3.bg-white.b--black-20.bw1.absolute.b.black-70
-          option(value='under $1,500') under $1,500
-          option(value='$1,500 - $3,000') $1,500 - $3,000
-          option(value='$3,000 - $5,000') $3,000 - $5,000
-          option(value='$5,000 - $10,000') $5,000 - $10,000
+        select.input-reset.f5.sans-serif.w-100.br1.pa3.bg-white.b--black-20.bw1.absolute.b.black-70(name='budget')
+          option(value='under $2,500') under $2,500
+          option(value='$2,500 - $5,000') $2,500 - $5,000
+          option(value='$5,000 - $7,500') $5,000 - $7,500
+          option(value='$7,500 - $10,000') $7,500 - $10,000
           option(value='over $10,000') over $10,000
         i.fa.fa-caret-down.absolute.right-1.top-1.black-60
     .fl.w-100.ph0.ph2-ns.pv2.pv3-ns
       label.f5.db.mb2(for='') Project brief
-      textarea.input-reset.f5.sans-serif.w-100.br1.pa3.bg-white.b--black-20.bw1.lh-copy(name='_replyto', type='email', placeholder='Tell me about you, the project, and how we can achieve things together :)' rows='8')
+      textarea.input-reset.f5.sans-serif.w-100.br1.pa3.bg-white.b--black-20.bw1.lh-copy(name='description' type='description', placeholder='Tell me about you, the project, and how we can achieve things together :)' rows='8')
   small.db.f6.mb4.tc I will get back to you in less than 2 working days
   .tc
     button.f6.f5-ns.pv3.ph4.br1.b--black-30.b--solid.bg-black-60.hover-bg-black-70.bg-animate.b.ttu.tracked-mega.black-70.pointer.white
