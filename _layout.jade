@@ -10,7 +10,6 @@ html
     title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
     meta(name="description" content=description ? description : public._data.index.description)
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
-    script(src='jquery.scrolldepth.min.js')
     script(src='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.min.js')
     link(rel='stylesheet' href='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.css')
   body.bg-near-white.f5-m.f4-ns.lh-copy.inconsolata
@@ -53,7 +52,7 @@ html
         (d.head || d.body).appendChild(s);
       })();
 
-  script(src='tracker.js')
+  script(src='/tracker.js')
   script.
     externalLinkToNewTab();
   script(src="//load.sumome.com/" data-sumo-site-id="55162b7725bdda04eb81ba851beb247985b2a15bc5110db679987d8e45c3ff1e" async="async")
