@@ -2,11 +2,18 @@
 -  return content.substring(0, 160) + '...'
 -  }
 
+//- each post, slug in public.thoughts._data
+//-   .pv3.pv4-ns.inconsolata
+//-       h6.f6.f5-ns.ma0.pb2.mb1.mb3.w5.b--black-10.bb.black-40.b= post.date
+//-       h2.f4.f3-m.f2-ns.mt2.lh-title.measure-narrow.apple-system.measure-narrow
+//-         a.link.black-90(href='/thoughts/#{ slug }')= post.title
+//-       != excerpt(partial('../thoughts/' + slug))
+//-       p.mb0.inconsolata
+//-         a(href='/thoughts/#{ slug }') Read more &rarr;
+        
 each post, slug in public.thoughts._data
-  .pv3.pv4-ns.inconsolata
-      h6.f6.f5-ns.ma0.pb2.mb1.mb3.w5.b--black-10.bb.black-40.b= post.date
-      h2.f4.f3-m.f2-ns.mt2.lh-title.measure-narrow.apple-system.measure-narrow
-        a.link.black-90(href='/thoughts/#{ slug }')= post.title
-      != excerpt(partial('../thoughts/' + slug))
-      p.mb0.inconsolata
-        a(href='/thoughts/#{ slug }') Read more &rarr;
+  .mb4.w-100.w-33-ns.pr4
+    h3.f5.b.mb1=post.title
+    h6.f6.mb3.o-40.normal= post.date
+    != excerpt(partial('../thoughts/' + slug))
+    a.db.mt3(href='/thoughts/#{ slug }') Read more &rarr;
