@@ -1,58 +1,48 @@
-doctype
+doctype html
 html
   head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
     meta(name="google-site-verification" content="8_jk4EKPuEDASp4cmS5SgZSNYpl-RxRyaJPO9jF5Pq8")
-    meta(name='viewport' content='width=device-width' initial-scale='1.0' charset='utf-8')
-    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.1/tachyons.min.css')
-    link(rel="stylesheet" href="/main.css")
-    link(href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto" rel="stylesheet")
+    link(href='https://fonts.googleapis.com/css?family=Poppins:400,600,700|Inconsolata:400,700', rel='stylesheet')
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
-    title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
-    meta(name="description" content=description ? description : public._data.index.description)
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
     script(src='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.min.js')
     link(rel='stylesheet' href='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.css')
-  body.f5-m.f4-ns.lh-copy.inconsolata(style='background: hsl(200, 7%, 97%);')
-    != partial('_shared/nav')
-    .center.pa4.pa5-ns(style="max-width: 50rem")
-      if current.path[0] === 'thoughts' && current.path[1] !== 'index'
-        .article.hover-internal
-          h6= public.thoughts._data[current.path[1]].date
-          h1= public.thoughts._data[current.path[1]].title
-          != yield
-          hr
-          form.input-reset#mc-embedded-subscribe-form.validate(action='//philipyoungg.us13.list-manage.com/subscribe/post?u=33f874b3a49f847d9180f003c&id=97773fd0be', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
-            p.apple-system.f6.black-70.measure-wide.mb4 If you like this essay, you can subscribe to my newsletter!  I share about productivity, personal learnings, and freebies every once in a while. 
-              span.black 🔥
-            #mc_embed_signup_scroll
-              input.f6.b--black-20.br1.pa2.w5.mr1.outline-0.mb2.mb0-ns(style='border-width: 1px' placeholder='awesome@amazing.com' type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required)
-              div(style='position: absolute; left: -5000px;', aria-hidden='true')
-                input(type='text', name='b_33f874b3a49f847d9180f003c_97773fd0be', tabindex='-1', value='')
-              .clear.dib
-                button#mc-embedded-subscribe.f6.ba.b--black-20.pa2.br1.bg-blue.white.dim.pointer.subscribe-button(type='submit', name='subscribe') Send me! ⚡️
-          hr
-          #disqus_thread
-          hr
-          != partial('_shared/blog-excerpt')
-      else
-        .hover-internal.measure-wide
-          != yield
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.css')
+    link(rel="stylesheet", href="/main.css")
+    title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
+    meta(name="description" content=description ? description : public._data.index.description)
+  body.lh-copy
+    !=partial('_shared/header')
+    if current.path[0] !== 'thoughts'
+      !=yield
+    else
+      .cf.center.ph4.ph5-ns.grid
+        .fl.w-100.w-100-m.w-25-ns.pr4.mb3.mb4-m.mb0-ns
+          h3.b.mb1 Navigation
+          != partial('_shared/nav')
+        .fl.w-100.w-100-m.w-75-ns
+          h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb5-ns= public.thoughts._data[current.path[1]].title
+      .cf.center.ph4.ph5-ns.grid
+        .fl.w-100.w-100-m.w-25-ns.pr4.h1.dn-m
+        article.fl.w-100.w-100-m.w-75-ns.pr4.mb4.mb6-ns
+          !=yield
+      !=partial('_shared/blog-excerpt')
     != partial('_shared/footer')
-    script.
-      // Disqus
-      // =======================================
-      var disqus_config = function () {
-        this.page.url = window.location;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = window.location; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      };
-      (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//philipyoungg-com.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
+  script.
+    // Disqus
+    // =======================================
+    var disqus_config = function () {
+      this.page.url = window.location;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = window.location; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//philipyoungg-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
 
   script(src='/tracker.js')
   script.
     externalLinkToNewTab();
-  script(src="//load.sumome.com/" data-sumo-site-id="55162b7725bdda04eb81ba851beb247985b2a15bc5110db679987d8e45c3ff1e" async="async")

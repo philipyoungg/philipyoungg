@@ -1,5 +1,55 @@
 html {
-  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 14px;
+  font-family: Inconsolata;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(200, 7%, 97%);
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 1.1;
+}
+@media screen and (max-width: 30em) {
+  h1 {
+    line-height: 1.3;
+  }
+}
+
+.poppins {
+  font-family: Poppins;
+}
+
+.softBlue {
+  color: hsl(207, 20%, 20%);
+}
+
+a {
+  color: hsl(207, 50%, 60%);
+
+  &:hover {
+    opacity: .6;
+    transition: .3s ease-in-out;
+  }
 }
 
 h1,
@@ -9,143 +59,70 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
-  margin-bottom: 1rem;
+  color: hsl(207, 20%, 20%);
 }
 
-select {
-  &:after {
-    content: 'shit';
-    z-index: 1;
-  }
+h3 {
+  margin-bottom: .25rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.inconsolata {
-  font-family: Inconsolata, monospace;
+p {
+  max-width: 35em;
 }
 
-.apple-system {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+#info {
+  padding-top: 2rem;
 }
 
-@media screen and(max-width: 30em) {
-  .f7 {
-    font-size: 0.75rem;
-  }
+.side {
+  position: absolute;
+  font-size: 9rem;
+  font-family: Poppins;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  opacity: .1;
+  letter-spacing: -0.05em;
+  color: hsl(201, 90%, 35%);
+  top: 50rem;
+  left: 20rem;
 }
 
-hr {
-  margin: 6rem auto;
-  height: 1px;
-  border: 0;
-  background-color: #ddd;
-  width: 90%;
-  max-width: 40rem;
+.grid {
+  max-width: 85rem;
 }
 
-.hover-internal {
-  p a {
-    position: relative;
-    color: mediumblue;
-  }
-  p a.active {
-    background: mediumblue;
-    color: white;
-  }
-  p a > i:before {
-    font-size: 0.5em;
-    margin-left: 0.5em;
-  }
-  p a:hover,
-  .main-highlight {
-    background: mediumblue;
-    color: white;
-  }
-}
+article {
+  font-size: 17px;
 
-.article {
-  margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, roboto;
-  > h1 {
-    line-height: 1.3;
-    margin-bottom: 3rem;
-    margin-top: 0.5rem;
-    font-size: 3rem;
-    font-family: -apple-system, BlinkMacSystemFont;
-  }
-  > h2 {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding-top: 3rem;
-    margin-top: 7rem;
-    font-size: 2rem;
-    line-height: 1.3;
-    margin-bottom: 2rem;
-    font-family: -apple-system, BlinkMacSystemFont;
-  }
-  @media screen and (min-width: 30em) and (max-width: 60em) {
-    > h3,
-    h4,
-    h5,
-    h6,
-    p {
-      max-width: 35em;
-    }
-    > h1 {
-      font-size: 2rem;
-      max-width: 15em;
-    }
-    > h2 {
-      font-size: 1.5rem;
-      margin-top: 5rem;
-      max-width: 15em;
-    }
-  }
-  > h3 {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-  }
-  > h4 {
-    margin-top: 3rem;
-  }
-  > h6 {
-    font-family: inconsolata;
-    font-size: 1rem;
-    color: hsl(0, 0%, 60%);
-    &:first-child {
-      display: inline-block;
-      width: 12rem;
-      padding-bottom: 0.5rem;
-      margin-bottom: 0.5rem;
-      border-bottom: 1px solid #ddd;
-    }
-  }
-  > ul,
-  > ol {
-    font-family: Inconsolata;
+  ol,
+  ul {
     padding-left: 1rem;
+    margin-bottom: 2rem;
   }
-  > p + h6 {
-    margin-top: -1rem;
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    margin: 5rem 0;
+    max-width: 25em;
   }
-  > p {
-    font-family: Inconsolata;
+
+  h2 {
+    margin-top: 4rem;
   }
-  @media screen and (max-width: 30em) {
-    > h1 {
-      font-size: 1.5rem;
-    }
-    > h2 {
-      margin-top: 4rem;
-      margin-bottom: 0.5rem;
-      font-size: 1.25rem;
-    }
-    > hr {
-      margin: 3rem auto;
-      width: 80%;
-    }
-    > p > img {
-      margin-left: calc(-2rem);
-      max-width: calc(100% + 4rem);
-    }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 30em) {
+  article hr {
+    margin: 3rem 0;
   }
 }

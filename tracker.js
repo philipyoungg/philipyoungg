@@ -11,19 +11,6 @@
     a.appendChild(r);
 })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 
-// Tawk To
-// =======================================
-
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5734a7777a3ac52f0f9f14e7/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-
 // Google Analytics
 // =======================================
 
