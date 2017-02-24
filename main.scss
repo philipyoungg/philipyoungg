@@ -13,10 +13,6 @@ p {
   margin-bottom: 1rem;
 }
 
-h6 {
-  margin-bottom: 1rem;
-}
-
 select {
   &:after {
     content: 'shit';
@@ -115,7 +111,6 @@ hr {
     font-family: inconsolata;
     font-size: 1rem;
     color: hsl(0, 0%, 60%);
-    margin: 0;
     &:first-child {
       display: inline-block;
       width: 12rem;
