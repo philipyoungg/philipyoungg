@@ -1,6 +1,6 @@
 html {
   font-size: 14px;
-  font-family: Inconsolata;
+  font-family: Inconsolata, monospace;
 }
 
 * {
@@ -25,7 +25,7 @@ ul {
 }
 
 h1 {
-  font-family: Poppins;
+  font-family: Poppins, Avenir Next, -apple-system, MacBlinkSystemFont, sans-serif;
   font-weight: 600;
   line-height: 1.1;
 }
@@ -36,7 +36,7 @@ h1 {
 }
 
 .poppins {
-  font-family: Poppins;
+  font-family: Poppins, Avenir Next, -apple-system, MacBlinkSystemFont, sans-serif;
 }
 
 .softBlue {
@@ -114,11 +114,15 @@ article {
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
   html {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 30em) {
   article hr {
     margin: 3rem 0;
+  }
+
+  article {
+    font-size: 14px;
   }
 }
