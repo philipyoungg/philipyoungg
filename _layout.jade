@@ -33,6 +33,10 @@ html
         article.fl.w-100.w-100-m.w-75-ns.pr0.pr4-m.pr4-ns.mb4.mb6-ns.measure-wide
           !=yield
       !=partial('_shared/subscribe')
+      .cf.ph4.ph5-ns.center.grid.mb4.mb6-ns.wow.fadeInUp
+        .fl.w-100.w-25-ns.dn.dn-m.db.h1
+        .fl.w-100.w-100-m.w-75-ns.pr0.pr4-m.pr6-ns.pv4
+          #disqus_thread
       !=partial('_shared/blog-excerpt')
     != partial('_shared/footer')
   script.
