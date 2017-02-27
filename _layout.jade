@@ -11,10 +11,12 @@ html
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.css')
     link(rel="stylesheet", href="/main.css")
     script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+    script(src='/fadeLayer.js')
     //- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
     title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
     meta(name="description" content=description ? description : public._data.index.description)
   body.lh-copy.pt4
+    //- .fixed.bg-black.w-100.h4.bottom-0.z-1#fadeLayer(style='pointer-events: none')
     !=partial('_shared/header')
     if (current.path[0] !== 'thoughts')
       !=yield
@@ -50,4 +52,5 @@ html
   script(src='/tracker.js')
   script.
     externalLinkToNewTab();
-    new WOW().init()
+    new WOW().init();
+    installFadeLayer()

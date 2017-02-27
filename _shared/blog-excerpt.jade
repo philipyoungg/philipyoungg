@@ -18,7 +18,7 @@
   .fl.w-100-m.w-25-ns.h1
   .fl.w-100-m.w-75-ns.db.flex-ns.flex-wrap-ns        
     each post, slug in public.thoughts._data
-      .mb4.w-100.w-33-ns.pr0.pr4-m.pr4-ns
+      .mb4.w-100.w-50-m.w-33-ns.pr0.pr4-m.pr4-ns
         h3.f5.b.mb1=post.title
         h6.f6.mb3.o-40.normal= post.date
         != excerpt(partial('../thoughts/' + slug))
