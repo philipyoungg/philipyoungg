@@ -138,6 +138,11 @@ article {
     font-size: 17px;
   }
 }
+@media screen and (min-width: 90em) {
+  html {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 30em) {
   article hr {
     margin: 3rem 0;
