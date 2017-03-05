@@ -26,7 +26,7 @@ body {
 
 .fadeInUp {
   animation-name: fadeInUp;
-  will-change: transform, opacity;
+  /* will-change: transform, opacity; */
   animation-duration: .6s;
 }
 
