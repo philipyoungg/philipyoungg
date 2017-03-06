@@ -21,19 +21,19 @@ html
     if (current.path[0] !== 'thoughts')
       !=yield
     else
-      .cf.center.ph4.ph5-ns.grid
-        .fl.w-100.w-100-m.w-25-ns.pr0.pr4-m.pr4-ns.mb3.mb4-m.mb0-ns
+      .cf.center.ph4.ph4-m.ph5-ns.grid
+        .fl.w-100.w-100-m.w-25-ns.ph0.ph3-ns.mb3.mb4-m.mb0-ns
           h3.b.mb1 Navigation
           != partial('_shared/nav')
         .fl.w-100.w-100-m.w-75-ns.wow.fadeInUp
             h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb5-ns
               =current.path[1] === 'index' ? 'Thoughts' : title
-      .cf.center.ph4.ph5-ns.grid.wow.fadeInUp
+      .cf.center.ph4.ph4-m.ph5-ns.grid.wow.fadeInUp
         .fl.w-100.w-100-m.w-25-ns.pr0.pr4-m.pr4-ns.h1.dn-m
         article.fl.w-100.w-100-m.w-75-ns.pr0.pr4-m.pr4-ns.mb4.mb6-ns.measure-wide
           !=yield
       !=partial('_shared/subscribe')
-      .cf.ph4.ph5-ns.center.grid.mb4.mb6-ns.wow.fadeInUp
+      .cf.ph4.ph4-m.ph5-ns.center.grid.mb4.mb6-ns.wow.fadeInUp
         .fl.w-100.w-25-ns.dn.dn-m.db.h1
         .fl.w-100.w-100-m.w-75-ns.pr0.pr4-m.pr6-ns.pv4
           #disqus_thread
