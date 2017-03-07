@@ -18,8 +18,8 @@
   .fl.w-100-m.w-25-ns.h1
   .fl.w-100-m.w-75-ns.db.flex-ns.flex-wrap-ns        
     each post, slug in public.thoughts._data
-      .mb4.w-100.w-50-m.w-33-ns.ph0.ph3-ns
-        h3.f5.b.mb1=post.title
+      a.block.link.mb4.w-100.w-50-m.w-33-ns.ph0.ph3-ns(href='/thoughts/' + slug)
+        h3.f5.b.mb1.poppins.fw6(style='letter-spacing: -0.025em')=post.title
         h6.f6.mb3.o-40.normal= post.date
         != excerpt(partial('../thoughts/' + slug))
-        a.db.mt3(href='/thoughts/#{ slug }') Read more &rarr;
+        p.underline.blue-link.db.mt3 Read more &rarr;

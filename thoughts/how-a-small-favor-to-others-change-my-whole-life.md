@@ -4,7 +4,9 @@ We check the price, compare the specs, weighting the pro/cons between model—an
 
 At last, he choose the one with better specs and dumped the better—designed one. Can’t believe someone could be so rational. Quite impressed. Happy with the decision, the salesman asked him whether he wanted to install a counterfeit software (It was normal here in Indonesia). It didn’t take long for him to say yes.
 
-I’m really mad at the time, not only because he installs the counterfeit software, but because he violates my personal time. I mean, c’mon man. Why don’t you just download it from your home? I want to go home. But, there he goes. I can’t wait much longer, so I told him I’ll wait for him on cafeteria with cynical voice tone.
+I’m really mad at the time, not only because he installs the counterfeit software, but because he violates my personal time. I mean, c’mon man. Why don’t you just download it from your home? I want to go home.
+
+But, there he goes. I can’t wait much longer, so I told him I’ll wait for him on cafeteria with cynical voice tone.
 
 Around 20 minutes later, he came and told me that he run out of money. This is really my tipping point. I got really mad—that I can’t talk anymore and just smile bitterly. We went down, pay some of it with my money, and went to parking lot.
 
