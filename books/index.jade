@@ -1,0 +1,16 @@
+.cf.center.ph4.ph4-m.ph5-ns.grid
+  .fl.w-100.w-100-m.w-25-ns.ph0.ph3-ns.mb3.mb4-m.mb0-ns
+    h3.b.mb1 Navigation
+    != partial('../_shared/nav')
+  .fl.w-100.w-100-m.w-75-ns.ph0.ph3-ns.wow.fadeInUp
+    h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb5-ns Books I&rsquo;ve Read
+.cf.center.ph4.ph4-m.ph5-ns.grid.mb5.mb6-ns.wow.fadeInUp
+  .fl.w-100-m.w-25-ns.ph0.ph3-ns
+    p.o-60.w-75.f6 It's unfinished. TODO: add must read, filter, and category.
+  .fl.w-100-m.w-75-ns.ph0.ph3-ns.flex.flex-wrap
+    each book in public.books._data.books
+      .w-100.w-50-m.w-25-ns.mb4.ph3
+        img.h5.mb3(src=book.cover)
+        h3.lh-title=book.title
+        p.mb1.f6.o-80=book.author
+        p.f6.o-50=book.category

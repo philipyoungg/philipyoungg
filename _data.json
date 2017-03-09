@@ -24,5 +24,9 @@
   "thanks": {
     "title": "Thanks",
     "description": "Thank you"
+  },
+  "books,index": {
+    "title": "Books",
+    "description": "Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co"
   }
 }

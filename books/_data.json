@@ -1,0 +1,304 @@
+{
+  "books": [
+  {
+    "mustRead": 1,
+    "title": "The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich",
+    "author": "Timothy Ferris",
+    "category": "Self-improvement",
+    "ISBN": 91929113,
+    "cover": "http://images.amazon.com/images/P/0091929113.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Tools of Titans: The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers",
+    "author": "Timothy Ferris",
+    "category": "Biography",
+    "ISBN": 1328683788,
+    "cover": "http://images.amazon.com/images/P/1328683788.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Rock Breaks Scissors",
+    "author": "William Poundstone",
+    "category": "Statistics",
+    "ISBN": 316228060,
+    "cover": "http://images.amazon.com/images/P/0316228060.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Are You Smart Enough to Work at Google?",
+    "author": "William Poundstone",
+    "category": "Interviewing",
+    "ISBN": 316099988,
+    "cover": "http://images.amazon.com/images/P/0316099988.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "category": "Self-improvement",
+    "ISBN": 1511317299,
+    "cover": "http://images.amazon.com/images/P/0684858398.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "category": "Self-improvement",
+    "ISBN": 671027034,
+    "cover": "http://images.amazon.com/images/P/0671027034.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "Elon Musk",
+    "author": "Ashley Vance",
+    "category": "Biography",
+    "ISBN": 62301233,
+    "cover": "http://images.amazon.com/images/P/0062301233.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "Thinking Fast and Slow",
+    "author": "Daniel Kahneman",
+    "category": "Psychology",
+    "ISBN": 374533555,
+    "cover": "http://images.amazon.com/images/P/0374533555.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Wait: The Art and Science of Delay",
+    "author": "Frank Partnoy",
+    "category": "Psychology",
+    "ISBN": 1610392477,
+    "cover": "http://images.amazon.com/images/P/1610392477.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "The Cather In The Rye",
+    "author": "J.D. Salinger",
+    "category": "Fiction",
+    "ISBN": 316769487,
+    "cover": "http://images.amazon.com/images/P/0316769487.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+    "author": "Haruki Murakami",
+    "category": "Fiction",
+    "ISBN": 804170126,
+    "cover": "http://images.amazon.com/images/P/0804170126.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "Eragon (4 Books)",
+    "author": "Christopher Paolini",
+    "category": "Fiction",
+    "ISBN": 375826696,
+    "cover": "http://images.amazon.com/images/P/0375826696.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Twilight (4 Books)",
+    "author": "Stephanie Meyer",
+    "category": "Fiction",
+    "ISBN": 1904233651,
+    "cover": "http://images.amazon.com/images/P/1904233651.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "category": "Fiction",
+    "ISBN": 722532938,
+    "cover": "http://images.amazon.com/images/P/0722532938.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "Manuscript Found in Accra",
+    "author": "Paulo Coelho",
+    "category": "Fiction",
+    "ISBN": 345805054,
+    "cover": "http://images.amazon.com/images/P/0345805054.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "Eat, Pray, Love: One Woman's Search for Everything Across Italy, India and Indonesia",
+    "author": "Elizabeth Gilbert",
+    "category": "Travel Writing",
+    "ISBN": 143038419,
+    "cover": "http://images.amazon.com/images/P/0143038419.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "The Art of Woo: Using Strategic Persuasion to Sell Your Ideas",
+    "author": "G. Richard Shell",
+    "category": "Psychology",
+    "ISBN": 143114042,
+    "cover": "http://images.amazon.com/images/P/0143114042.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "Contagious: Why Things Catch On",
+    "author": "Jonah Berger",
+    "category": "Psychology",
+    "ISBN": 1451686587,
+    "cover": "http://images.amazon.com/images/P/1451686587.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Made to Stick",
+    "author": "Chip Heath and Dan Heath",
+    "category": "Psychology",
+    "ISBN": 1400064287,
+    "cover": "http://images.amazon.com/images/P/1400064287.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Outliers: The Story of Success",
+    "author": "Malcolm Gladwell",
+    "category": "Statistics",
+    "ISBN": 316017930,
+    "cover": "http://images.amazon.com/images/P/0316017930.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Tribes: We Need You to Lead Us",
+    "author": "Malcolm Gladwell",
+    "category": "Business",
+    "ISBN": 1491514736,
+    "cover": "http://images.amazon.com/images/P/0749939753.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers",
+    "author": "Alexander Osterwalder and Yves Pigneur",
+    "category": "Business",
+    "ISBN": 470876417,
+    "cover": "http://images.amazon.com/images/P/0470876417.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future",
+    "author": "Chris Guillebeau",
+    "category": "Business",
+    "ISBN": 307951529,
+    "cover": "http://images.amazon.com/images/P/0307951529.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "Traction: How Any Startup Can Achieve Explosive Customer Growth",
+    "author": "Gabriel Weinberg and Justin Mares",
+    "category": "Business",
+    "ISBN": 1936661837,
+    "cover": "http://images.amazon.com/images/P/0241242533.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "The Alchemyst: The Secrets of the Immortal Nicholas Flamel (6 Books)",
+    "author": "Michael Scott",
+    "category": "Fiction",
+    "ISBN": 385736002,
+    "cover": "http://images.amazon.com/images/P/0385736002.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "The Power of Habit: Why We Do What We Do in Life",
+    "author": "Charless Duhigg",
+    "category": "Self-improvement",
+    "ISBN": "081298160X",
+    "cover": "http://images.amazon.com/images/P/081298160X.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "Get Some Headspace",
+    "author": "Andy Pudicombe",
+    "category": "Meditation",
+    "ISBN": 1444722204,
+    "cover": "http://images.amazon.com/images/P/1444722204.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "The Power of Now: A Guide to Spiritual Enlightenment",
+    "author": "Eckhart Tolle",
+    "category": "Meditation",
+    "ISBN": 1577314808,
+    "cover": "http://images.amazon.com/images/P/1577314808.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 0,
+    "title": "The Tipping Point",
+    "author": "Malcolm Gladwell",
+    "category": "Statistics",
+    "ISBN": 316346624,
+    "cover": "http://images.amazon.com/images/P/0316346624.jpg",
+    "description": "",
+    "amazonLink": ""
+  },
+  {
+    "mustRead": 1,
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupery and Richard Howard",
+    "category": "Fiction",
+    "ISBN": 156012197,
+    "cover": "http://images.amazon.com/images/P/0156012197.jpg",
+    "description": "",
+    "amazonLink": ""
+  }
+]
+}
