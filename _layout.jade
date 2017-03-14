@@ -1,14 +1,29 @@
+//     ____  __    _ ___          __  __                        
+//    / __ \/ /_  (_) (_)___      \ \/ /___  __  ______  ____ _ 
+//   / /_/ / __ \/ / / / __ \      \  / __ \/ / / / __ \/ __ `/ 
+//  / ____/ / / / / / / /_/ /      / / /_/ / /_/ / / / / /_/ /  
+// /_/   /_/ /_/_/_/_/ .___/      /_/\____/\__,_/_/ /_/\__, /   
+//                  /_/                               /____/    
+// ------------------------------------------------------------ 
+//       Product Design & Developement - philipyoungg.com       
+// ------------------------------------------------------------ 
+
+
 doctype html
 html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width')
     meta(name="google-site-verification" content="8_jk4EKPuEDASp4cmS5SgZSNYpl-RxRyaJPO9jF5Pq8")
+    meta(name='author' content='Philip Young')
+    meta(name='author-website' content='philipyoungg.com')
     link(href='https://fonts.googleapis.com/css?family=Poppins:400,600,700|Inconsolata:400,700', rel='stylesheet')
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js')
     script(src='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.min.js')
     link(rel='stylesheet' href='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.css')
+    link(rel="stylesheet", href="/tachyons-reset.css")
     link(rel="stylesheet", href="/main.css")
     script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
     script(src='/fadeLayer.js')
@@ -18,31 +33,26 @@ html
   body.lh-copy.pt4
     //- .fixed.bg-black.w-100.h4.bottom-0.z-1#fadeLayer(style='pointer-events: none')
     !=partial('_shared/header')
-    // not thoughts
     if (current.path[0] !== 'thoughts') 
       !=yield
     else
-      .cf.center.ph4.ph4-m.ph5-ns.grid
-        .fl.w-100.w-100-m.w-25-ns.ph0.ph3-ns.mb3.mb4-m.mb0-ns
+      .cf.center.ph3.ph4-m.ph5-ns.grid
+        .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.mb3.mb4-m.mb0-ns
           h3.b.mb1 Navigation
           != partial('_shared/nav')
-        .fl.w-100.w-100-m.w-75-ns.wow.fadeInUp
-            h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb5-ns
+        .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.wow.fadeInUp
+            h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb4-ns
               =current.path[1] === 'index' ? 'Thoughts' : title
       if (current.path[1] !== 'index')
-        .cf.center.ph4.ph4-m.ph5-ns.grid.wow.fadeInUp
-          .fl.w-100.w-100-m.w-25-ns.pr0.pr4-m.pr4-ns.h1.dn-m
-          article.fl.w-100.w-100-m.w-75-ns.pr0.pr4-m.pr4-ns.mb4.mb6-ns.measure-wide
+        .cf.center.ph3.ph4-m.ph5-ns.grid.wow.fadeInUp
+          .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1.dn-m
+          article.fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.mb4.mb5-ns.measure-wide
             !=yield
         !=partial('_shared/subscribe')
-        .cf.ph4.ph4-m.ph5-ns.center.grid.mb4.mb6-ns.wow.fadeInUp
+        .cf.ph3.ph4-m.ph5-ns.center.grid.mb4.mb5-ns.wow.fadeInUp
           .fl.w-100.w-25-ns.dn.dn-m.db.h1
-          .fl.w-100.w-100-m.w-75-ns.pr0.pr4-m.pr6-ns.pv4
+          .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.pv4
             #disqus_thread
-        .cf.center.ph4.ph4-m.ph5-ns.grid.mb3.wow.fadeInUp
-            .fl.w-100.w-100-m.w-25-ns.ph0.ph3-ns.h1
-            .fl.w-100.w-100-m.w-75-ns.ph0.ph3-ns
-              h2.f3.f2-ns.poppins.fw6.tracked-tight Thoughts
       !=partial('_shared/blog-excerpt')
     != partial('_shared/footer')
   script.

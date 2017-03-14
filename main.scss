@@ -1,16 +1,14 @@
-html {
-  font-size: 14px;
-  font-family: Inconsolata, monospace;
-}
-
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-family: Inconsolata, monospace;
+  font-size: 21px;
+}
+
 body {
   background: hsl(200, 7%, 97%);
-  padding: 0;
-  margin: 0;
 }
 @keyframes fadeInUp {
   from {
@@ -34,17 +32,6 @@ body {
   visibility: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0 0 1.5rem;
-}
-
 h1 {
   font-family: Poppins, Avenir Next, -apple-system, MacBlinkSystemFont, sans-serif;
   font-weight: 600;
@@ -65,11 +52,11 @@ h1 {
 }
 
 .blue-link {
-  color: hsl(207, 50%, 60%);
+  color: hsl(207, 60%, 60%);
 }
 
 a {
-  color: hsl(207, 50%, 60%);
+  color: hsl(207, 60%, 60%);
 
   &:hover {
     opacity: .6;
@@ -94,12 +81,6 @@ p {
   color: hsl(207, 20%, 20%);
 }
 
-h3 {
-  margin-bottom: .25rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
 #info {
   padding-top: 2rem;
 }
@@ -119,11 +100,19 @@ h3 {
 }
 
 .grid {
-  max-width: 85rem;
+  max-width: 65rem;
+}
+
+.tag {
+  padding: .15rem .2rem;
+}
+
+.pa-input {
+  padding: .875rem 1rem;
 }
 
 article {
-  font-size: 17px;
+  font-size: 25px;
 
   ol,
   ul {
@@ -140,18 +129,48 @@ article {
     max-width: 25em;
   }
 
+  p + img {
+    margin-bottom: 0;
+  }
+
   h2 {
-    margin-top: 4rem;
+    margin-top: 7rem;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  h6 {
+    opacity: .6;
+  }
+}
+
+#instafeed {
+  column-count: 3;
+  column-gap: .5em;
+
+  & a {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
   }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
   html {
-    font-size: 17px;
+    font-size: 24px;
+  }
+
+  #instafeed {
+    column-count: 2;
   }
 }
 @media screen and (min-width: 90em) {
   html {
-    font-size: 17px;
+    font-size: 24px;
   }
 
   article {
@@ -165,5 +184,19 @@ article {
 
   article {
     font-size: 14px;
+
+    & h2 {
+      font-size: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    & h3 {
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+  }
+
+  #instafeed {
+    column-count: 2;
   }
 }

@@ -2,20 +2,18 @@
 -  return content.substring(0, 160) + '...'
 -  }
 
-//- each post, slug in public.thoughts._data
-//-   .pv3.pv4-ns.inconsolata
-//-       h6.f6.f5-ns.ma0.pb2.mb1.mb3.w5.b--black-10.bb.black-40.b= post.date
-//-       h2.f4.f3-m.f2-ns.mt2.lh-title.measure-narrow.apple-system.measure-narrow
-//-         a.link.black-90(href='/thoughts/#{ slug }')= post.title
-//-       != excerpt(partial('../thoughts/' + slug))
-//-       p.mb0.inconsolata
-//-         a(href='/thoughts/#{ slug }') Read more &rarr;
-.cf.center.ph4.ph4-m.ph5-ns.grid.wow.fadeInUp
+//- hack
+if (current.path[1] !== 'index') 
+  .cf.center.ph3.ph4-m.ph5-ns.grid.mb3.wow.fadeInUp
+    .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1
+    .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns
+      h2.f3.f2-ns.fw6.tracked-tight.poppins Thoughts
+.cf.center.ph3.ph4-m.ph5-ns.grid.wow.fadeInUp.mb5.mb5-ns
   .fl.w-100-m.w-25-ns.h1
   .fl.w-100-m.w-75-ns.db.flex-ns.flex-wrap-ns        
     each post, slug in public.thoughts._data
-      a.block.link.mb4.w-100.w-50-m.w-33-ns.ph0.ph3-ns(href='/thoughts/' + slug)
-        h3.f5.b.mb1.poppins.fw6(style='letter-spacing: -0.025em')=post.title
-        h6.f6.mb3.o-40.normal= post.date
+      a.db.link.mb4.w-100.w-50-m.w-33-ns.ph2.ph3-ns(href='/thoughts/' + slug)
+        h3.f5.b.mb1.fw6(style='letter-spacing: -0.025em')=post.title
+        h6.f6.mb2.o-40.normal= post.date
         != excerpt(partial('../thoughts/' + slug))
-        p.underline.blue-link.db.mt3 Read more &rarr;
+        p.underline.blue-link.db Read more &rarr;
