@@ -4,7 +4,7 @@
 
 html {
   font-family: Inconsolata, monospace;
-  font-size: 21px;
+  font-size: 14px;
 }
 
 body {
@@ -70,6 +70,10 @@ a.block {
   }
 }
 
+ul {
+  margin: 0 0 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -100,7 +104,7 @@ p {
 }
 
 .grid {
-  max-width: 65rem;
+  max-width: 85rem;
 }
 
 .tag {
@@ -108,7 +112,7 @@ p {
 }
 
 .pa-input {
-  padding: .875rem 1rem;
+  padding: 1rem 1.5rem;
 }
 
 article {
@@ -150,7 +154,7 @@ article {
 
 #instafeed {
   column-count: 3;
-  column-gap: .5em;
+  column-gap: .1em;
 
   & a {
     background-color: transparent;
