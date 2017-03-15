@@ -36,7 +36,7 @@ html
     if (current.path[0] !== 'thoughts') 
       !=yield
     else
-      .cf.center.ph3.ph4-m.ph5-ns.grid
+      .cf.center.ph2.ph3-m.ph5-ns.grid
         .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.mb3.mb4-m.mb0-ns
           h3.b.mb1 Navigation
           != partial('_shared/nav')
@@ -44,7 +44,7 @@ html
             h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb4-ns
               =current.path[1] === 'index' ? 'Thoughts' : title
       if (current.path[1] !== 'index')
-        .cf.center.ph3.ph4-m.ph5-ns.grid.wow.fadeInUp
+        .cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp
           .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1.dn-m
           article.fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.mb4.mb5-ns.measure-wide
             !=yield
