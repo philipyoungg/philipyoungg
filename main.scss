@@ -1,37 +1,15 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
   font-family: Inconsolata, monospace;
   font-size: 14px;
 }
 
-body {
+body {}
+
+.bg-mint {
   background: hsl(200, 7%, 97%);
 }
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, .5rem, 0);
-  }
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  animation-name: fadeInUp;
-  /* will-change: transform, opacity; */
-  animation-duration: .6s;
-}
-
-.wow {
-  visibility: hidden;
-}
-
+// questionable
 h1 {
   font-family: Poppins, Avenir Next, -apple-system, MacBlinkSystemFont, sans-serif;
   font-weight: 600;
@@ -104,7 +82,7 @@ p {
 }
 
 .grid {
-  max-width: 85rem;
+  max-width: 90rem;
 }
 
 .tag {
@@ -116,12 +94,16 @@ p {
 }
 
 article {
-  font-size: 25px;
+  font-size: 17px;
 
   ol,
   ul {
     padding-left: 1rem;
     margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
   }
 
   hr {
@@ -161,11 +143,13 @@ article {
     display: inline-block;
     margin: 0;
     width: 100%;
+    line-height: 1;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
   html {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   #instafeed {
@@ -174,7 +158,7 @@ article {
 }
 @media screen and (min-width: 90em) {
   html {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   article {
@@ -208,3 +192,28 @@ article {
     column-count: 2;
   }
 }
+
+/* h1 span {
+  will-change: opacity;
+} */
+/* @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, .5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  will-change: transform, opacity;
+  animation-duration: .6s;
+}
+
+.wow {
+  visibility: hidden;
+} */

@@ -23,53 +23,259 @@ html
     script(src='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.min.js')
     link(rel='stylesheet' href='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.css')
+    link(rel="stylesheet", href="/reset.css")
     link(rel="stylesheet", href="/main.css")
     script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
-    script(src='/fadeLayer.js')
     //- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
     title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
     meta(name="description" content=description ? description : public._data.index.description)
-  body.lh-copy.pt4
-    //- .fixed.bg-black.w-100.h4.bottom-0.z-1#fadeLayer(style='pointer-events: none')
-    !=partial('_shared/header')
-    if (current.path[0] !== 'thoughts') 
-      !=yield
-    else
-      .cf.center.ph2.ph3-m.ph5-ns.grid
-        .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.mb3.mb4-m.mb0-ns
-          h3.b.mb1 Navigation
-          != partial('_shared/nav')
-        .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.wow.fadeInUp
-            h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb4-ns
-              =current.path[1] === 'index' ? 'Thoughts' : title
-      if (current.path[1] !== 'index')
-        .cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp
-          .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1.dn-m
-          article.fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.mb4.mb5-ns.measure-wide
-            !=yield
-        !=partial('_shared/subscribe')
-        .cf.ph3.ph4-m.ph5-ns.center.grid.mb4.mb5-ns.wow.fadeInUp
-          .fl.w-100.w-25-ns.dn.dn-m.db.h1
-          .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.pv4
-            #disqus_thread
-      !=partial('_shared/blog-excerpt')
-    != partial('_shared/footer')
+  body.lh-copy.bg-mint
+    #loading-overlay.w-100.vh-100.fixed.z-2.bg-mint
+    .vs-section.pt4
+      #app
+        !=partial('_shared/header')
+        if (current.path[0] !== 'thoughts') 
+          !=yield
+        else
+          .cf.center.ph2.ph3-m.ph5-ns.grid
+            .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.mb3.mb4-m.mb0-ns
+              f5.b.mb1 Navigation
+              != partial('_shared/nav')
+            .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.wow.fadeInUp
+                h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb4-ns
+                  =current.path[1] === 'index' ? 'Thoughts' : title
+          if (current.path[1] !== 'index')
+            .cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp
+              .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1.dn-m
+              article.fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.mb4.mb5-ns.measure-wide
+                !=yield
+            !=partial('_shared/subscribe')
+            .cf.ph3.ph4-m.ph5-ns.center.grid.mb4.mb5-ns.wow.fadeInUp
+              .fl.w-100.w-25-ns.dn.dn-m.db.h1
+              .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.pv4
+          !=partial('_shared/blog-excerpt')
+        != partial('_shared/footer')
   script.
-    // Disqus
-    // =======================================
-    var disqus_config = function () {
-      this.page.url = window.location;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = window.location; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = '//philipyoungg-com.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-
-  script(src='/tracker.js')
+  script(src='https://rawgit.com/baptistebriel/smooth-scrolling/master/smooth-scrolling.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js')
   script.
-    externalLinkToNewTab();
-    new WOW().init();
-    installFadeLayer()
+    var splitWord = function(selector) {
+      var title = document.querySelector(selector);
+      title.style['whiteSpace'] = 'pre-wrap';
+      title.style['opacity'] = 0;
+      var words = title.textContent.split(' ')
+      title.textContent = ''
+      title.style['opacity'] = 1
+      words.forEach(function(word){
+        var span = document.createElement('span')
+        var space = document.createElement('span')
+        span.style['display'] = 'inline-block'
+        span.style['opacity'] = 0
+        span.textContent = word
+        space.textContent = ' '
+        title.appendChild(span)
+        title.appendChild(space)
+      })
+    }
+    var nextPage = ''
+    var loadingIn = anime.timeline({
+      autoplay: false
+    })
+    .add({
+      targets: '#loading-overlay',
+      easing: 'easeInOutQuad',
+      opacity: [1, 0],
+      duration: 400,
+      complete: function(e) {
+        document.querySelector('#loading-overlay').style.visibility = 'hidden'
+      },
+      offset: 0
+    })
+    .add({
+      targets: '#app',
+      easing: 'easeInOutQuad',
+      opacity: [0, 1],
+      translateY: [20, 0],
+      duration: 400,
+      offset: 400
+    });
+    
+    var loadingOut = anime.timeline({
+      autoplay: false
+    })
+    .add({
+      targets: '#loading-overlay',
+      easing: 'easeInOutQuad',
+      opacity: [0, 1],
+      duration: 100,
+      offset: 0
+    })
+    .add({
+      targets: '#app',
+      easing: 'easeInOutQuad',
+      opacity: [1, 0],
+      translateY: [0, -20],
+      duration: 250,
+      offset: 0,
+      complete: function(anim) {
+        window.location.href = nextPage
+      }
+    })
+    
+    document.addEventListener('DOMContentLoaded', function(e){
+      $('#app').css({
+        opacity: 0,
+      })
+      
+      $('a').on('click', function(e){
+        if (this.getAttribute('target') === '_blank') {
+          return
+        } else if (this.href) {
+          e.preventDefault()
+          nextPage = this.href
+          loadingOut.play()
+        } 
+      })
+      
+      externalLinkToNewTab()
+      installFadeLayer()
+    })
+    
+    window.onload = function(e) {
+      if ('ontouchstart' in window === false) {
+        document.body.style['overflow'] = 'hidden';
+        var smoothScroll = new Smooth({
+          preload: true,
+        })
+        smoothScroll.init()
+      }
+      
+      if (window.location.pathname === '/') {
+        var feed = new Instafeed({
+          get: 'user',
+          userId: 3659828,
+          accessToken: '3659828.6974e58.098b38ceb09c49f59df610eec9db535d',
+          resolution: 'standard_resolution',
+          after: function(){
+            setTimeout(() => {
+              smoothScroll.resize()
+            }, 300)
+          }
+        }).run()
+      }
+      
+      loadingIn.play()
+      
+      splitWord('h1')
+      
+      
+      var article = {
+        targets: 'article',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateY: [20, 0],
+        duration: 1000,
+        offset: 300
+      }
+        
+      var books = {
+        targets: '.book',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateY: [10, 0],
+        duration: 300,
+        delay: function(t, i) {
+          return i * 50
+        },
+        offset: 800
+      }
+      
+      var thoughts = {
+        targets: '.thoughts',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateY: [10, 0],
+        duration: 300,
+        delay: function(t, i) {
+          return i * 50
+        },
+        offset: 800
+      }
+      
+      var intro = {
+        targets: '.intro',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateY: [10, 0],
+        duration: 300,
+        delay: function(t, i) {
+          return i * 50
+        },
+        offset: 1000
+      }
+      
+      var inquiry = {
+        targets: '.inquiry',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateY: [10, 0],
+        duration: 300,
+        delay: function(t, i) {
+          return i * 50
+        },
+        offset: 800
+      }
+      
+      var disclaimer = {
+        targets: '.disclaimer',
+        easing: 'easeInOutQuad',
+        opacity: [0, 0.7],
+        translateY: [10, 0],
+        duration: 300,
+        offset: 1000
+      }
+      
+      $('.book').css({
+        opacity: 0
+      })
+      $('.disclaimer').css({
+        opacity: 0
+      })
+      $('.intro').css({
+        opacity: 0
+      })
+      $('.thoughts').css({
+        opacity: 0
+      })
+      $('.article').css({
+        opacity: 0
+      })
+      $('.inquiry').css({
+        opacity: 0
+      })
+      
+      var page = anime.timeline({
+        autoplay: false,
+      })
+        .add({
+          targets: 'h1 span',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateY: [10, 0],
+          duration: 300,
+          delay: function(t, i) {
+            return 600 + (i * 50)
+          }
+        })
+        .add(books)
+        .add(intro)
+        .add(thoughts)
+        .add(article)
+        .add(inquiry)
+        .add(disclaimer)
+        
+      page.play()
+    }
+script(src='/tracker.js')
+      
