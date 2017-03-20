@@ -30,9 +30,19 @@ html
     title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
     meta(name="description" content=description ? description : public._data.index.description)
   body.lh-copy.bg-mint
+    .fixed.cf.ph2.ph3-m.ph5-ns.grid.w-100.vh-100.absolute-horizontal-center
+      .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
+        .bl.b--black-05.h-100
+      .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
+        .bl.b--black-05.h-100
+      .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
+        .bl.b--black-05.h-100
+      .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100.br.b--black-05
+        .bl.b--black-05.h-100
     #loading-overlay.w-100.vh-100.fixed.z-2.bg-mint
     .vs-section.pt4
       #app
+        
         !=partial('_shared/header')
         if (current.path[0] !== 'thoughts') 
           !=yield
@@ -78,68 +88,68 @@ html
         title.appendChild(space)
       })
     }
-    var nextPage = ''
+    
+    $('#app').css({
+      opacity: 0,
+    })
+    
     var loadingIn = anime.timeline({
       autoplay: false
     })
-    .add({
-      targets: '#loading-overlay',
-      easing: 'easeInOutQuad',
-      opacity: [1, 0],
-      duration: 400,
-      complete: function(e) {
-        document.querySelector('#loading-overlay').style.visibility = 'hidden'
-      },
-      offset: 0
-    })
-    .add({
-      targets: '#app',
-      easing: 'easeInOutQuad',
-      opacity: [0, 1],
-      translateY: [20, 0],
-      duration: 400,
-      offset: 400
-    });
+      .add({
+        targets: '#loading-overlay',
+        easing: 'easeInOutQuad',
+        opacity: [1, 0],
+        duration: 400,
+        complete: function(e) {
+          document.querySelector('#loading-overlay').style.visibility = 'hidden'
+        },
+        offset: 0
+      })
+      .add({
+        targets: '#app',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateY: [20, 0],
+        duration: 400,
+        offset: 400
+      });
     
     var loadingOut = anime.timeline({
       autoplay: false
     })
-    .add({
-      targets: '#loading-overlay',
-      easing: 'easeInOutQuad',
-      opacity: [0, 1],
-      duration: 100,
-      offset: 0
-    })
-    .add({
-      targets: '#app',
-      easing: 'easeInOutQuad',
-      opacity: [1, 0],
-      translateY: [0, -20],
-      duration: 250,
-      offset: 0,
-      complete: function(anim) {
-        window.location.href = nextPage
-      }
+      .add({
+        targets: '#loading-overlay',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        duration: 200,
+        offset: 0
+      })
+      .add({
+        targets: '#app',
+        easing: 'easeInOutQuad',
+        opacity: [1, 0],
+        translateY: [0, -20],
+        duration: 200,
+        offset: 0,
+      })
+    loadingOut.finished.then(function(){
+      window.location.href = window.location.href 
     })
     
     document.addEventListener('DOMContentLoaded', function(e){
-      $('#app').css({
-        opacity: 0,
-      })
       
       $('a').on('click', function(e){
         if (this.getAttribute('target') === '_blank') {
           return
         } else if (this.href) {
           e.preventDefault()
-          nextPage = this.href
           loadingOut.play()
+          history.pushState(null, null, this.href)
         } 
       })
       
       externalLinkToNewTab()
-      installFadeLayer()
     })
     
     window.onload = function(e) {
@@ -147,6 +157,7 @@ html
         document.body.style['overflow'] = 'hidden';
         var smoothScroll = new Smooth({
           preload: true,
+        
         })
         smoothScroll.init()
       }
@@ -169,6 +180,25 @@ html
       
       splitWord('h1')
       
+      var title = {
+        targets: 'h1 span',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateY: [10, 0],
+        duration: 300,
+        delay: function(t, i) {
+          return 600 + (i * 50)
+        }
+      }
+      
+      var header = {
+        targets: '.header',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateY: [30, 0],
+        duration: 300,
+        offset: 0
+      }
       
       var article = {
         targets: 'article',
@@ -176,7 +206,7 @@ html
         opacity: [0, 1],
         translateY: [20, 0],
         duration: 1000,
-        offset: 300
+        offset: 500
       }
         
       var books = {
@@ -212,7 +242,7 @@ html
         delay: function(t, i) {
           return i * 50
         },
-        offset: 1000
+        offset: 1200
       }
       
       var inquiry = {
@@ -220,10 +250,7 @@ html
         easing: 'easeInOutQuad',
         opacity: [0, 1],
         translateY: [10, 0],
-        duration: 300,
-        delay: function(t, i) {
-          return i * 50
-        },
+        duration: 500,
         offset: 800
       }
       
@@ -236,6 +263,9 @@ html
         offset: 1000
       }
       
+      $('.header').css({
+        opacity: 0
+      })
       $('.book').css({
         opacity: 0
       })
@@ -248,7 +278,7 @@ html
       $('.thoughts').css({
         opacity: 0
       })
-      $('.article').css({
+      $('article').css({
         opacity: 0
       })
       $('.inquiry').css({
@@ -258,16 +288,8 @@ html
       var page = anime.timeline({
         autoplay: false,
       })
-        .add({
-          targets: 'h1 span',
-          easing: 'easeInOutQuad',
-          opacity: [0, 1],
-          translateY: [10, 0],
-          duration: 300,
-          delay: function(t, i) {
-            return 600 + (i * 50)
-          }
-        })
+        .add(title)
+        .add(header)
         .add(books)
         .add(intro)
         .add(thoughts)

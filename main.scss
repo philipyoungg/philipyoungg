@@ -136,7 +136,7 @@ article {
 
 #instafeed {
   column-count: 3;
-  column-gap: 1em;
+  column-gap: 0;
 
   & a {
     background-color: transparent;
@@ -145,15 +145,12 @@ article {
     width: 100%;
     line-height: 1;
     margin-bottom: 1rem;
+    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
   html {
     font-size: 16px;
-  }
-
-  #instafeed {
-    column-count: 2;
   }
 }
 @media screen and (min-width: 90em) {
@@ -190,7 +187,20 @@ article {
 
   #instafeed {
     column-count: 2;
+
+    & a {
+      padding-left: .5rem;
+    }
   }
+}
+
+.vs-scrolldrag {
+  position: fixed;
+  top: 2px;
+  right: 2px;
+  background: rgba(0,0,0,0.2);
+  width: 8px;
+  border-radius: 6px;
 }
 
 /* h1 span {

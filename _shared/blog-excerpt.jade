@@ -12,7 +12,7 @@ if (current.path[1] !== 'index')
   .fl.w-100-m.w-25-ns.h1
   .fl.w-100-m.w-75-ns.db.flex-ns.flex-wrap-ns        
     each post, slug in public.thoughts._data
-      a.thoughts.db.link.mb4.w-100.w-50-m.w-33-ns.ph2.ph3-ns(href='/thoughts/' + slug)
+      a.thoughts.db.link.mb4.w-100.w-third-m.replace.w-third-ns.ph2.ph3-ns(href='/thoughts/' + slug)
         h3.f5.b.mb1.fw6.lh-copy(style='letter-spacing: -0.025em')=post.title
         h6.f6.mb2.o-40.normal= post.date
         != excerpt(partial('../thoughts/' + slug))
