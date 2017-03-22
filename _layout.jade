@@ -10,10 +10,10 @@
 
 
 doctype html
-html
+html(lang='en')
   head
     meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width')
+    meta(name='viewport', content='width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     meta(name="google-site-verification" content="8_jk4EKPuEDASp4cmS5SgZSNYpl-RxRyaJPO9jF5Pq8")
     meta(name='author' content='Philip Young')
     meta(name='author-website' content='philipyoungg.com')
@@ -25,8 +25,6 @@ html
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.css')
     link(rel="stylesheet", href="/reset.css")
     link(rel="stylesheet", href="/main.css")
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
-    //- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
     title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
     meta(name="description" content=description ? description : public._data.index.description)
   body.lh-copy.bg-mint
@@ -216,7 +214,7 @@ html
         translateY: [10, 0],
         duration: 300,
         delay: function(t, i) {
-          return i * 50
+          return i * 75
         },
         offset: 800
       }
@@ -228,7 +226,7 @@ html
         translateY: [10, 0],
         duration: 300,
         delay: function(t, i) {
-          return i * 50
+          return i * 75
         },
         offset: 800
       }
@@ -240,7 +238,7 @@ html
         translateY: [10, 0],
         duration: 300,
         delay: function(t, i) {
-          return i * 50
+          return i * 75
         },
         offset: 1200
       }
