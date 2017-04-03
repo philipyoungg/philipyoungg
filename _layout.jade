@@ -8,7 +8,6 @@
 //       Product Design & Developement - philipyoungg.com       
 // ------------------------------------------------------------ 
 
--// from public.data / blog
 - var shareTitle = title + " - Philip Young" || "Philip Young"
 - var shareImage = '/screenshot.png'
 - var shareDescription = description || 'Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co'
@@ -16,6 +15,7 @@
 doctype html
 html(lang='en')
   head
+    title=shareTitle
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     meta(name="google-site-verification" content="8_jk4EKPuEDASp4cmS5SgZSNYpl-RxRyaJPO9jF5Pq8")
@@ -39,11 +39,12 @@ html(lang='en')
     meta(name='twitter:title', content=shareTitle)
     meta(name='twitter:description', content=shareDescription)
     meta(name='twitter:image', content=shareImage)
-    title=shareTitle
     meta(name="description" content=shareDescription)
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/native.history.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js')
   body.lh-copy.bg-mint
     // grid
-    .fixed.cf.ph2.ph3-m.ph5-ns.w-100.vh-100.absolute-horizontal-center.grid
+    .fixed.cf.ph2.ph3-m.ph5-ns.w-100.vh-100.absolute-horizontal-center.grid(style='pointer-events: none')
       .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
         .bl.b--black-05.h-100
       .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
@@ -59,7 +60,7 @@ html(lang='en')
         else
           .cf.center.ph2.ph3-m.ph5-ns.grid
             .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.mb3.mb4-m.mb0-ns
-              f5.b.mb1 Navigation
+              h3.f5.b.mb1 Navigation
               != partial('_shared/nav')
             .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.wow.fadeInUp
                 h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb4-ns
@@ -75,52 +76,30 @@ html(lang='en')
               .fl.w-100.w-67-m.w-50-ns.ph2.ph3-ns.pv4
                 #disqus_thread
           !=partial('_shared/blog-excerpt')
-        //- != partial('_shared/footer')
         .pt6
           !=partial('_shared/footer')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js')
+  script(src='/tracker.js')
+
   script.
-    var disqus_config = function () {
-    this.page.url = window.location.href;
-    this.page.identifier = window.location.href; 
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://philipyoungg-com.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-  script.
-    var splitWord = function(selector) {
-      var title = document.querySelector(selector);
-      title.style['whiteSpace'] = 'pre-wrap';
-      title.style['opacity'] = 0;
-      var words = title.textContent.split(' ')
-      title.textContent = ''
-      title.style['opacity'] = 1
-      words.forEach(function(word){
-        var span = document.createElement('span')
-        var space = document.createElement('span')
-        span.style['display'] = 'inline-block'
-        span.style['opacity'] = 0
-        span.textContent = word
-        space.textContent = ' '
-        title.appendChild(span)
-        title.appendChild(space)
-      })
-    }
-    
-    var loadingIn = anime.timeline({
-      autoplay: false
-    })
-      .add({
-        targets: '#app',
-        easing: 'easeInOutQuad',
-        opacity: [0, 1],
-        translateX: [-10, 0],
-        duration: 400,
-      });
+    //- var splitWord = function(selector) {
+    //-   var title = document.querySelector(selector);
+    //-   title.style['whiteSpace'] = 'pre-wrap';
+    //-   title.style['opacity'] = 0;
+    //-   var words = title.textContent.split(' ')
+    //-   title.textContent = ''
+    //-   title.style['opacity'] = 1
+    //-   words.forEach(function(word){
+    //-     var span = document.createElement('span')
+    //-     var space = document.createElement('span')
+    //-     span.style['display'] = 'inline-block'
+    //-     span.style['opacity'] = 0
+    //-     span.textContent = word
+    //-     space.textContent = ' '
+    //-     title.appendChild(span)
+    //-     title.appendChild(space)
+    //-   })
+    //- }
     
     var loadingOut = anime.timeline({
       autoplay: false
@@ -130,139 +109,220 @@ html(lang='en')
         easing: 'easeInOutQuad',
         opacity: [1, 0],
         translateX: [0, 10],
-        duration: 300,
+        duration: 200,
       })
-    loadingOut.finished.then(function(){
-      window.location.href = window.location.href 
-    })
+    //- loadingOut.finished.then(function(){
+    //-   History.pushState( null, 'loading...', this.href );
+    //- })
     
-    $('#app').css({
-      opacity: 0
-    })
-    $('.book').css({
-      opacity: 0
-    })
-    $('.disclaimer').css({
-      opacity: 0
-    })
-    $('.intro').css({
-      opacity: 0
-    })
-    $('.thoughts').css({
-      opacity: 0
-    })
-    $('article').css({
-      opacity: 0
-    })
-    $('.inquiry').css({
-      opacity: 0
-    })
-    
-    document.addEventListener('DOMContentLoaded', function(e){
+    //- document.addEventListener('DOMContentLoaded', function(e){
       
-      $('a').on('click', function(e){
-        if (this.getAttribute('target') === '_blank') {
-          return
-        } else if (this.href) {
-          e.preventDefault()
-          loadingOut.play()
-          history.pushState(null, null, this.href)
-        } 
+      //- $('a').on('click', function(e){
+      //-   if (this.getAttribute('target') === '_blank') {
+      //-     return
+      //-   } else if (this.href) {
+      //-     e.preventDefault()
+      //-     loadingOut.play()
+      //-     history.pushState(null, null, this.href)
+      //-   } 
+      //- })
+      
+      //- setTimeout(function(){ // hack for smooth animation
+      //- splitWord('h1')
+    window.onload = function() {
+      playAnimation()
+    }
+      
+    function playAnimation() {
+      var loadingIn = anime.timeline({
+        autoplay: false
       })
+        .add({
+          targets: '#app',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateX: [-10, 0],
+          duration: 200,
+        });
+        
+      var title = {
+        targets: 'h1',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateX: [-10, 0],
+        duration: 500,
+        delay: function(t, i) {
+          return i * 50
+        }
+      }
       
-      externalLinkToNewTab()
+      var article = {
+        targets: 'article',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateX: [-10, 0],
+        duration: 500,
+        offset: 0
+      }
+        
+      var books = {
+        targets: '.book',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateX: [-10, 0],
+        duration: 500,
+        delay: function(t, i) {
+          return i * 75
+        },
+        offset: 0
+      }
       
-      setTimeout(function(){ // hack for smooth animation
-        //- splitWord('h1')
+      var thoughts = {
+        targets: '.thoughts',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateX: [-10, 0],
+        duration: 500,
+        delay: function(t, i) {
+          return i * 75
+        },
+        offset: 0
+      }
+      
+      var intro = {
+        targets: '.intro',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateX: [-10, 0],
+        duration: function(t, i) {
+          return 500
+        },
+        delay: function(t, i) {
+          return i * 75
+        },
+        offset: 0
+      }
+      
+      var inquiry = {
+        targets: '.inquiry',
+        easing: 'easeInOutQuad',
+        opacity: [0, 1],
+        translateX: [-10, 0],
+        duration: 500,
+        offset: 0
+      }
+      
+      var disclaimer = {
+        targets: '.disclaimer',
+        easing: 'easeInOutQuad',
+        opacity: [0, 0.7],
+        translateX: [-10, 0],
+        duration: 500,
+        offset: 300
+      }
+      
+      var page = anime.timeline({
+        autoplay: false,
+      })
+        .add(title)
+        .add(books)
+        .add(intro)
+        .add(thoughts)
+        .add(article)
+        .add(inquiry)
+        .add(disclaimer)
         
-        var title = {
-          targets: 'h1',
-          easing: 'easeInOutQuad',
-          opacity: [0, 1],
-          translateX: [-10, 0],
-          duration: 600,
-          delay: function(t, i) {
-            return i * 50
-          }
-        }
-        
-        var article = {
-          targets: 'article',
-          easing: 'easeInOutQuad',
-          opacity: [0, 1],
-          translateX: [-10, 0],
-          duration: 600,
-          offset: 0
-        }
-          
-        var books = {
-          targets: '.book',
-          easing: 'easeInOutQuad',
-          opacity: [0, 1],
-          translateX: [-10, 0],
-          duration: 600,
-          delay: function(t, i) {
-            return i * 150 + (i < 8 ? (i * 100) : 800)
-          },
-          offset: 0
-        }
-        
-        var thoughts = {
-          targets: '.thoughts',
-          easing: 'easeInOutQuad',
-          opacity: [0, 1],
-          translateX: [-10, 0],
-          duration: 600,
-          delay: function(t, i) {
-            return i * 150 + (i * 100)
-          },
-          offset: 0
-        }
-        
-        var intro = {
-          targets: '.intro',
-          easing: 'easeInOutQuad',
-          opacity: [0, 1],
-          translateX: [-10, 0],
-          duration: 600,
-          delay: function(t, i) {
-            return i * 150 + (i * 100)
-          },
-          offset: 0
-        }
-        
-        var inquiry = {
-          targets: '.inquiry',
-          easing: 'easeInOutQuad',
-          opacity: [0, 1],
-          translateX: [-10, 0],
-          duration: 600,
-          offset: 0
-        }
-        
-        var disclaimer = {
-          targets: '.disclaimer',
-          easing: 'easeInOutQuad',
-          opacity: [0, 0.7],
-          translateX: [-10, 0],
-          duration: 600,
-          offset: 300
-        }
-        
-        var page = anime.timeline({
-          autoplay: false,
-        })
-          .add(title)
-          .add(books)
-          .add(intro)
-          .add(thoughts)
-          .add(article)
-          .add(inquiry)
-          .add(disclaimer)
-          
+      setTimeout(function(){
         loadingIn.play()
         page.play()
-      }, 300)
+      }, 1)
+    }
+    
+    var pageCache = {}
+    
+    var updateView = function(state) {
+      externalLinkToNewTab()
+      
+      var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = window.location.href; 
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://philipyoungg-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      ///////////
+      window.scrollTo(0, 0)
+      document.title = pageCache[state.url].title
+      $('#app')
+        .html(pageCache[state.url].html)
+        .promise()
+        .done(function(res){
+          ga('set', {
+            page: window.location.pathname,
+            title: pageCache[state.url].title,
+          })
+          ga('send', 'pageview')
+          
+          $('.book').css({
+            opacity: 0
+          })
+          $('.disclaimer').css({
+            opacity: 0
+          })
+          $('.intro').css({
+            opacity: 0
+          })
+          $('.thoughts').css({
+            opacity: 0
+          })
+          $('article').css({
+            opacity: 0
+          })
+          $('.inquiry').css({
+            opacity: 0
+          })
+          
+          playAnimation()
+        })
+      ///////////
+    }
+    
+    $('#app').on('click', 'a', function(e){
+      if (this.getAttribute('target') === '_blank') {
+        return
+      }
+      e.preventDefault()
+      if (window.location.href === this.href) {
+        return
+      }
+      if (this.href) {
+        loadingOut.play()
+        History.pushState( null, 'loading...', this.href )
+      } 
     })
-script(src='/tracker.js')
+    
+    History.Adapter.bind(window, 'statechange', function(){
+      var state = History.getState()
+      if (!pageCache[state.url]) {
+        $.get(state.url, function(res){
+          var newContent = $(res).find('#app').html()
+          var newTitle = $(res).filter('title').text()
+          console.log(newTitle)
+          pageCache[state.url] = {}
+          pageCache[state.url].html = newContent
+          pageCache[state.url].title = newTitle
+        })
+        .promise()
+        .done(function(res){
+          updateView(state)
+        })
+      } else {
+        setTimeout(function(){
+          updateView(state) // super animation hack
+        }, 200)
+      }
+    })
       
