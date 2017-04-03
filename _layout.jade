@@ -8,12 +8,16 @@
 //       Product Design & Developement - philipyoungg.com       
 // ------------------------------------------------------------ 
 
+-// from public.data / blog
+- var shareTitle = title + " - Philip Young" || "Philip Young"
+- var shareImage = '/screenshot.png'
+- var shareDescription = description || 'Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co'
 
 doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     meta(name="google-site-verification" content="8_jk4EKPuEDASp4cmS5SgZSNYpl-RxRyaJPO9jF5Pq8")
     meta(name='author' content='Philip Young')
     meta(name='author-website' content='philipyoungg.com')
@@ -25,11 +29,21 @@ html(lang='en')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.css')
     link(rel="stylesheet", href="/reset.css")
     link(rel="stylesheet", href="/main.css")
-    title= public._data[current.path] ? public._data[current.path].title + " - Philip Young" : title + " - Philip Young"
-    meta(name="description" content=description ? description : public._data.index.description)
+    meta(property='og:title', content=shareTitle)
+    meta(property='og:type', content='website')
+    meta(property='og:image', content=shareImage)
+    meta(property='og:description', content=shareDescription)
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='@philipyoungg')
+    meta(name='twitter:creator', content='@philipyoungg')
+    meta(name='twitter:title', content=shareTitle)
+    meta(name='twitter:description', content=shareDescription)
+    meta(name='twitter:image', content=shareImage)
+    title=shareTitle
+    meta(name="description" content=shareDescription)
   body.lh-copy.bg-mint
     // grid
-    .fixed.cf.ph2.ph3-m.ph5-ns.grid.w-100.vh-100.absolute-horizontal-center
+    .fixed.cf.ph2.ph3-m.ph5-ns.w-100.vh-100.absolute-horizontal-center.grid
       .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
         .bl.b--black-05.h-100
       .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
@@ -38,9 +52,8 @@ html(lang='en')
         .bl.b--black-05.h-100
       .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100.br.b--black-05
         .bl.b--black-05.h-100
-    .vs-section.pt4.pt5-ns
-      #app
-        !=partial('_shared/header')
+    .vs-section.pt4.pt5-m.pt6-ns
+      #app.o-0
         if (current.path[0] !== 'thoughts') 
           !=yield
         else
@@ -59,11 +72,25 @@ html(lang='en')
             !=partial('_shared/subscribe')
             .cf.ph3.ph4-m.ph5-ns.center.grid.mb4.mb5-ns.wow.fadeInUp
               .fl.w-100.w-25-ns.dn.dn-m.db.h1
-              .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.pv4
+              .fl.w-100.w-67-m.w-50-ns.ph2.ph3-ns.pv4
+                #disqus_thread
           !=partial('_shared/blog-excerpt')
-        != partial('_shared/footer')
+        //- != partial('_shared/footer')
+        .pt6
+          !=partial('_shared/footer')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js')
+  script.
+    var disqus_config = function () {
+    this.page.url = window.location.href;
+    this.page.identifier = window.location.href; 
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://philipyoungg-com.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
   script.
     var splitWord = function(selector) {
       var title = document.querySelector(selector);
@@ -84,10 +111,6 @@ html(lang='en')
       })
     }
     
-    $('#app').css({
-      opacity: 0,
-    })
-    
     var loadingIn = anime.timeline({
       autoplay: false
     })
@@ -96,7 +119,7 @@ html(lang='en')
         easing: 'easeInOutQuad',
         opacity: [0, 1],
         translateX: [-10, 0],
-        duration: 200,
+        duration: 400,
       });
     
     var loadingOut = anime.timeline({
@@ -107,10 +130,32 @@ html(lang='en')
         easing: 'easeInOutQuad',
         opacity: [1, 0],
         translateX: [0, 10],
-        duration: 200,
+        duration: 300,
       })
     loadingOut.finished.then(function(){
       window.location.href = window.location.href 
+    })
+    
+    $('#app').css({
+      opacity: 0
+    })
+    $('.book').css({
+      opacity: 0
+    })
+    $('.disclaimer').css({
+      opacity: 0
+    })
+    $('.intro').css({
+      opacity: 0
+    })
+    $('.thoughts').css({
+      opacity: 0
+    })
+    $('article').css({
+      opacity: 0
+    })
+    $('.inquiry').css({
+      opacity: 0
     })
     
     document.addEventListener('DOMContentLoaded', function(e){
@@ -128,14 +173,14 @@ html(lang='en')
       externalLinkToNewTab()
       
       setTimeout(function(){ // hack for smooth animation
-        splitWord('h1')
+        //- splitWord('h1')
         
         var title = {
-          targets: 'h1 span',
+          targets: 'h1',
           easing: 'easeInOutQuad',
           opacity: [0, 1],
           translateX: [-10, 0],
-          duration: 300,
+          duration: 600,
           delay: function(t, i) {
             return i * 50
           }
@@ -145,9 +190,9 @@ html(lang='en')
           targets: 'article',
           easing: 'easeInOutQuad',
           opacity: [0, 1],
-          translateX: [-20, 0],
-          duration: 1000,
-          offset: 150
+          translateX: [-10, 0],
+          duration: 600,
+          offset: 0
         }
           
         var books = {
@@ -155,11 +200,11 @@ html(lang='en')
           easing: 'easeInOutQuad',
           opacity: [0, 1],
           translateX: [-10, 0],
-          duration: 300,
+          duration: 600,
           delay: function(t, i) {
-            return i * 100
+            return i * 150 + (i < 8 ? (i * 100) : 800)
           },
-          offset: 150
+          offset: 0
         }
         
         var thoughts = {
@@ -167,11 +212,11 @@ html(lang='en')
           easing: 'easeInOutQuad',
           opacity: [0, 1],
           translateX: [-10, 0],
-          duration: 300,
+          duration: 600,
           delay: function(t, i) {
-            return i * 100
+            return i * 150 + (i * 100)
           },
-          offset: 150
+          offset: 0
         }
         
         var intro = {
@@ -179,11 +224,11 @@ html(lang='en')
           easing: 'easeInOutQuad',
           opacity: [0, 1],
           translateX: [-10, 0],
-          duration: 300,
+          duration: 600,
           delay: function(t, i) {
-            return i * 100
+            return i * 150 + (i * 100)
           },
-          offset: 150
+          offset: 0
         }
         
         var inquiry = {
@@ -191,8 +236,8 @@ html(lang='en')
           easing: 'easeInOutQuad',
           opacity: [0, 1],
           translateX: [-10, 0],
-          duration: 500,
-          offset: 150
+          duration: 600,
+          offset: 0
         }
         
         var disclaimer = {
@@ -200,28 +245,9 @@ html(lang='en')
           easing: 'easeInOutQuad',
           opacity: [0, 0.7],
           translateX: [-10, 0],
-          duration: 300,
-          offset: 400
+          duration: 600,
+          offset: 300
         }
-        
-        $('.book').css({
-          opacity: 0
-        })
-        $('.disclaimer').css({
-          opacity: 0
-        })
-        $('.intro').css({
-          opacity: 0
-        })
-        $('.thoughts').css({
-          opacity: 0
-        })
-        $('article').css({
-          opacity: 0
-        })
-        $('.inquiry').css({
-          opacity: 0
-        })
         
         var page = anime.timeline({
           autoplay: false,

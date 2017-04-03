@@ -1,11 +1,15 @@
 {
+  "index": {
+    "title": "Thoughts",
+    "description": "Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co"
+  },
   "all-blogposts-gone": {
-    "title": "All blogposts—gone 😭",
+    "title": "All Blogposts—Gone 😭",
     "date": "4 November 2016",
     "description": "My blog posts from last 3 years are all gone. The hosting provider told that they didn't kept any backup (lesson learned: backup). Meanwhile, I tried to manually add posts that saved on my local computer."
   },
   "change-your-life-change-your-environment": {
-    "title": "How to change your life: Start changing your environment",
+    "title": "How to Change Your Life: Start Changing Your Environment",
     "date": "14 September 2016",
     "description": "Changing your life is not that hard. Knowing this one trick could help wonders."
   },
