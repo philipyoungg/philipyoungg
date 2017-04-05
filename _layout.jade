@@ -29,6 +29,7 @@ html(lang='en')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.css')
     link(rel="stylesheet", href="/reset.css")
     link(rel="stylesheet", href="/main.css")
+    link(ref='icon' href='/favicon.ico?' type='image/x-icon')
     meta(property='og:title', content=shareTitle)
     meta(property='og:type', content='website')
     meta(property='og:image', content=shareImage)
@@ -42,6 +43,7 @@ html(lang='en')
     meta(name="description" content=shareDescription)
     script(src='https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/native.history.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js')
   body.lh-copy.bg-mint
     // grid
     .fixed.cf.ph2.ph3-m.ph5-ns.w-100.vh-100.absolute-horizontal-center.grid(style='pointer-events: none')
@@ -63,7 +65,7 @@ html(lang='en')
               h3.f5.b.mb1 Navigation
               != partial('_shared/nav')
             .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.wow.fadeInUp
-                h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb3.mb4-ns
+                h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb4.mb5-ns
                   =current.path[1] === 'index' ? 'Thoughts' : title
           if (current.path[1] !== 'index')
             .cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp
@@ -78,251 +80,296 @@ html(lang='en')
           !=partial('_shared/blog-excerpt')
         .pt6
           !=partial('_shared/footer')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js')
-  script(src='/tracker.js')
+    script(src='/tracker.js')
 
-  script.
-    //- var splitWord = function(selector) {
-    //-   var title = document.querySelector(selector);
-    //-   title.style['whiteSpace'] = 'pre-wrap';
-    //-   title.style['opacity'] = 0;
-    //-   var words = title.textContent.split(' ')
-    //-   title.textContent = ''
-    //-   title.style['opacity'] = 1
-    //-   words.forEach(function(word){
-    //-     var span = document.createElement('span')
-    //-     var space = document.createElement('span')
-    //-     span.style['display'] = 'inline-block'
-    //-     span.style['opacity'] = 0
-    //-     span.textContent = word
-    //-     space.textContent = ' '
-    //-     title.appendChild(span)
-    //-     title.appendChild(space)
-    //-   })
-    //- }
-    
-    var loadingOut = anime.timeline({
-      autoplay: false
-    })
-      .add({
-        targets: '#app',
-        easing: 'easeInOutQuad',
-        opacity: [1, 0],
-        translateX: [0, 10],
-        duration: 200,
-      })
-    //- loadingOut.finished.then(function(){
-    //-   History.pushState( null, 'loading...', this.href );
-    //- })
-    
-    //- document.addEventListener('DOMContentLoaded', function(e){
-      
-      //- $('a').on('click', function(e){
-      //-   if (this.getAttribute('target') === '_blank') {
-      //-     return
-      //-   } else if (this.href) {
-      //-     e.preventDefault()
-      //-     loadingOut.play()
-      //-     history.pushState(null, null, this.href)
-      //-   } 
-      //- })
-      
-      //- setTimeout(function(){ // hack for smooth animation
-      //- splitWord('h1')
-    window.onload = function() {
-      playAnimation()
-    }
-      
-    function playAnimation() {
-      var loadingIn = anime.timeline({
-        autoplay: false
-      })
-        .add({
-          targets: '#app',
-          easing: 'easeInOutQuad',
-          opacity: [0, 1],
-          translateX: [-10, 0],
-          duration: 200,
-        });
-        
-      var title = {
-        targets: 'h1',
-        easing: 'easeInOutQuad',
-        opacity: [0, 1],
-        translateX: [-10, 0],
-        duration: 500,
-        delay: function(t, i) {
-          return i * 50
+    script.
+      // Google Analytics
+      // =======================================
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-51658519-1', 'auto');
+      ga('send', 'pageview');
+                                
+      var updateScript = function() {
+        externalLinkToNewTab()
+        var urlArray = window.location.href.split('/')
+        if (urlArray[3] === 'thoughts' && urlArray[4]) {
+          if (window.DISQUS) {
+            DISQUS.reset({
+              reload: true,
+              config: function() {
+                this.page.identifier = window.location.href
+                this.page.url = window.location.href
+              }
+            })
+          } else {
+            var disqus_config = function () {
+              this.page.url = window.location.href
+              this.page.identifier = window.location.href
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://philipyoungg.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          }  
         }
       }
       
-      var article = {
-        targets: 'article',
-        easing: 'easeInOutQuad',
-        opacity: [0, 1],
-        translateX: [-10, 0],
-        duration: 500,
-        offset: 0
+      var splitWord = function(selector) {
+        var title = document.querySelector(selector);
+        title.style['whiteSpace'] = 'pre-wrap';
+        title.style['opacity'] = 0;
+        var words = title.textContent.split(' ')
+        title.textContent = ''
+        title.style['opacity'] = 1
+        words.forEach(function(word){
+          var span = document.createElement('span')
+          var space = document.createElement('span')
+          span.style['display'] = 'inline-block'
+          span.style['opacity'] = 0
+          span.textContent = word
+          space.textContent = ' '
+          title.appendChild(span)
+          title.appendChild(space)
+        })
       }
         
-      var books = {
-        targets: '.book',
-        easing: 'easeInOutQuad',
-        opacity: [0, 1],
-        translateX: [-10, 0],
-        duration: 500,
-        delay: function(t, i) {
-          return i * 75
-        },
-        offset: 0
-      }
-      
-      var thoughts = {
-        targets: '.thoughts',
-        easing: 'easeInOutQuad',
-        opacity: [0, 1],
-        translateX: [-10, 0],
-        duration: 500,
-        delay: function(t, i) {
-          return i * 75
-        },
-        offset: 0
-      }
-      
-      var intro = {
-        targets: '.intro',
-        easing: 'easeInOutQuad',
-        opacity: [0, 1],
-        translateX: [-10, 0],
-        duration: function(t, i) {
-          return 500
-        },
-        delay: function(t, i) {
-          return i * 75
-        },
-        offset: 0
-      }
-      
-      var inquiry = {
-        targets: '.inquiry',
-        easing: 'easeInOutQuad',
-        opacity: [0, 1],
-        translateX: [-10, 0],
-        duration: 500,
-        offset: 0
-      }
-      
-      var disclaimer = {
-        targets: '.disclaimer',
-        easing: 'easeInOutQuad',
-        opacity: [0, 0.7],
-        translateX: [-10, 0],
-        duration: 500,
-        offset: 300
-      }
-      
-      var page = anime.timeline({
-        autoplay: false,
-      })
-        .add(title)
-        .add(books)
-        .add(intro)
-        .add(thoughts)
-        .add(article)
-        .add(inquiry)
-        .add(disclaimer)
+      function playAnimation() {
+        splitWord('h1')
+        var loadingIn = anime.timeline({
+          autoplay: false
+        })
+          .add({
+            targets: '#app',
+            easing: 'easeInOutQuad',
+            opacity: [0, 1],
+            translateX: [-10, 0],
+            duration: 300,
+          });
+          
+        var title = {
+          targets: 'h1 span',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateY: [2, 0],
+          duration: 500,
+          delay: function(t, i) {
+            return i * 50
+          }
+        }
         
-      setTimeout(function(){
-        loadingIn.play()
-        page.play()
-      }, 1)
-    }
-    
-    var pageCache = {}
-    
-    var updateView = function(state) {
-      externalLinkToNewTab()
-      
-      var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = window.location.href; 
-      };
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://philipyoungg-com.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-      ///////////
-      window.scrollTo(0, 0)
-      document.title = pageCache[state.url].title
-      $('#app')
-        .html(pageCache[state.url].html)
-        .promise()
-        .done(function(res){
-          ga('set', {
-            page: window.location.pathname,
-            title: pageCache[state.url].title,
-          })
-          ga('send', 'pageview')
+        var article = {
+          targets: 'article',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateX: [-10, 0],
+          duration: 500,
+          offset: 0
+        }
           
-          $('.book').css({
-            opacity: 0
-          })
-          $('.disclaimer').css({
-            opacity: 0
-          })
-          $('.intro').css({
-            opacity: 0
-          })
-          $('.thoughts').css({
-            opacity: 0
-          })
-          $('article').css({
-            opacity: 0
-          })
-          $('.inquiry').css({
-            opacity: 0
-          })
+        var books = {
+          targets: '.book',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateX: [-10, 0],
+          duration: 500,
+          delay: function(t, i) {
+            return i * 50
+          },
+          offset: 0
+        }
+        
+        var thoughts = {
+          targets: '.thoughts',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateX: [-10, 0],
+          duration: 500,
+          delay: function(t, i) {
+            return i * 50
+          },
+          offset: 0
+        }
+        
+        var intro = {
+          targets: '.intro',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateX: [-10, 0],
+          duration: function(t, i) {
+            return 500
+          },
+          delay: function(t, i) {
+            return i * 50
+          },
+          offset: 0
+        }
+        
+        var inquiry = {
+          targets: '.inquiry',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateX: [-10, 0],
+          duration: 500,
+          offset: 0
+        }
+        
+        var disclaimer = {
+          targets: '.disclaimer',
+          easing: 'easeInOutQuad',
+          opacity: [0, 0.7],
+          translateY: [5, 0],
+          duration: 300,
+          offset: 300
+        }
+        
+        var label = {
+          targets: 'label',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateX: [-10, 0],
+          duration: 500,
+          delay: function(t, i) {
+            return i * 50
+          },
+          offset: 10
+        }
+        
+        var input = {
+          targets: '.input-reset',
+          easing: 'easeInOutQuad',
+          opacity: [0, 1],
+          translateX: [-10, 0],
+          duration: 500,
+          delay: function(t, i) {
+            return i * 50
+          },
+          offset: 0
+        }
+        
+        var page = anime.timeline({
+          autoplay: false,
+        })
+          .add(title)
+          .add(books)
+          .add(intro)
+          .add(thoughts)
+          .add(article)
+          .add(input)
+          .add(label)
+          .add(inquiry)
+          .add(disclaimer)
           
-          playAnimation()
-        })
-      ///////////
-    }
-    
-    $('#app').on('click', 'a', function(e){
-      if (this.getAttribute('target') === '_blank') {
-        return
-      }
-      e.preventDefault()
-      if (window.location.href === this.href) {
-        return
-      }
-      if (this.href) {
-        loadingOut.play()
-        History.pushState( null, 'loading...', this.href )
-      } 
-    })
-    
-    History.Adapter.bind(window, 'statechange', function(){
-      var state = History.getState()
-      if (!pageCache[state.url]) {
-        $.get(state.url, function(res){
-          var newContent = $(res).find('#app').html()
-          var newTitle = $(res).filter('title').text()
-          console.log(newTitle)
-          pageCache[state.url] = {}
-          pageCache[state.url].html = newContent
-          pageCache[state.url].title = newTitle
-        })
-        .promise()
-        .done(function(res){
-          updateView(state)
-        })
-      } else {
         setTimeout(function(){
-          updateView(state) // super animation hack
-        }, 200)
+          loadingIn.play()
+          page.play()
+        }, 1)
       }
-    })
+      
+      var cacheCurrentPage = function() {
+        var newContent = $('#app').html()
+        pageCache[window.location.href] = {}
+        pageCache[window.location.href].html = newContent
+        pageCache[window.location.href].title = document.title
+      }
+      
+      var pageCache = {}
+      cacheCurrentPage()
+      
+      var updateView = function(state) {
+        window.scrollTo(0, 0)
+        document.title = pageCache[state.url].title
+        $('#app')
+          .html(pageCache[state.url].html)
+          .promise()
+          .done(function(res){
+            $('.disclaimer').css({
+              opacity: 0
+            })
+            $('.book').css({
+              opacity: 0
+            })
+            $('.disclaimer').css({
+              opacity: 0
+            })
+            $('.intro').css({
+              opacity: 0
+            })
+            $('.thoughts').css({
+              opacity: 0
+            })
+            $('article').css({
+              opacity: 0
+            })
+            $('.inquiry').css({
+              opacity: 0
+            })
+            $('.disclaimer').css({
+              opacity: 0
+            })
+            playAnimation()
+            updateScript()
+            ga('set', {
+              page: window.location.pathname,
+              title: pageCache[state.url].title,
+            })
+            ga('send', 'pageview')
+          })
+        ///////////
+      }
+      
+      $('#app').on('click', 'a', function(e){
+        if (this.hostname !== window.location.hostname) {
+          return
+        }
+        e.preventDefault()
+        if (window.location.href === this.href) {
+          return
+        }
+        if (this.href) {
+          var loadingOut = anime.timeline({
+            autoplay: false
+          })
+            .add({
+              targets: '#app',
+              easing: 'easeInOutQuad',
+              opacity: [1, 0],
+              translateX: [0, 10],
+              duration: 200,
+            })
+          loadingOut.play()
+          History.pushState( null, 'loading...', this.href )
+        } 
+      })
+      
+      History.Adapter.bind(window, 'statechange', function(){
+        var state = History.getState()
+        if (!pageCache[state.url]) {
+          $.get(state.url, function(res){
+            var newContent = $(res).find('#app').html()
+            var newTitle = $(res).filter('title').text()
+            pageCache[state.url] = {}
+            pageCache[state.url].html = newContent
+            pageCache[state.url].title = newTitle
+          })
+          .promise()
+          .done(function(res){
+            updateView(state)
+          })
+          .fail(function(res){
+            window.location.href = '/404'
+          })
+        } else {
+          setTimeout(function(){
+            updateView(state) // super animation hack
+          }, 200)
+        }
+      })
+      
+      setTimeout(playAnimation, 400)
+      updateScript()
       

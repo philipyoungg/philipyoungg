@@ -1,0 +1,76 @@
+{
+  "index": {
+    "title": "Thoughts",
+    "description": "Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co"
+  },
+  "bukapintu": {
+    "title": "Bukapintu",
+    "description": "Bukapintu is an exclusive community that matches companies with high quality candidate from top universities.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["product design", "product dev.", "brand identity"]
+  },
+  "do-you-travel": {
+    "title": "Do You Travel",
+    "description": "Website redesign for Jack Morris, Instagram influencer with 1.8M followers.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["product design", "product dev.", "graphic design"]
+  },
+  "startuplab": {
+    "title": "Startup Lab",
+    "description": "College startup lab is a 3-day intensive startup bootcamp that teaches participant the right way to build a startup.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["product design", "product dev.", "brand identity", "photography"]
+  },
+  "salma-et-olivier": {
+    "title": "Salma & Olivier",
+    "description": "A website that designed with one specific objective in mind: to confirm seamsless guest attendance experience.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["product design", "product dev."]
+  },
+  "typography-combination": {
+    "title": "Typography Combination",
+    "description": "A web app that generates typography combination based on your input. I made this product to help me speed up my process of finding the perfect typography.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["product design", "product dev."]
+  },
+  "clock": {
+    "title": "Classic Clock",
+    "description": "A simple clock with classic design. I developed this as a \"live screen saver\" while taking a rest.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["product design", "product dev."]
+  },
+  "sanstore": {
+    "title": "Sanstore",
+    "description": "Sanstore is a mini-market based in Purwokerto. Together with my friends, we designed the identity, architecture, and conducting market feasibility to make sure the investment are sound.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["brand identity"]
+  },
+  "the-bright-bulb": {
+    "title": "The Bright Bulb",
+    "description": "The Bright Bulb designs high impact program to teach people fundamental skills such as design, writing, and personal branding.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["slidedeck design", "interaction design", "brand identity", "copywriting"]
+  },
+  "aiesec-mick-jagger": {
+    "title": "AIESEC - Mick Jagger Poster",
+    "description": "Poster design for recruitment campaign. Designed to attract students to join AIESEC—the biggest student organization in the world.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["graphic design"]
+  },
+  "public-house": {
+    "title": "Public House",
+    "description": "Public House is a restaurant that aims to be place where local business person meets and network.",
+    "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
+    "date": "5 April 2017",
+    "category": ["graphic design", "brand identity"]
+  }
+}

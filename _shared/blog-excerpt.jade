@@ -10,10 +10,10 @@ if (current.path[1] !== 'index')
       h2.f3.f2-ns.fw6.tracked-tight.poppins Thoughts
 .cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp.mb5.mb5-ns
   .fl.w-100-m.w-25-ns.h1
-  .fl.w-100-m.w-75-ns.db.flex-ns.flex-wrap-ns        
+  .fl.w-100-m.w-75-ns.flex.flex-wrap        
     each post, slug in public.thoughts._data
       if slug !== 'index'
-        a.thoughts.db.link.mb4.w-100.w-third-m.replace.w-third-ns.ph2.ph3-ns(href='/thoughts/' + slug)
+        a.thoughts.db.link.mb4.w-50.w-third-m.replace.w-third-ns.ph2.ph3-ns(href='/thoughts/' + slug)
           h3.f5.b.mb1.fw6.lh-copy(style='letter-spacing: -0.025em')=post.title
           h6.f6.mb2.o-40.normal= post.date
           != excerpt(partial('../thoughts/' + slug))
