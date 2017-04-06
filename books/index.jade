@@ -16,11 +16,11 @@
     -   return a.category > b.category ? 1 : -1
     - })
     each book in books
-      .w-50.w-third-m.w-25-ns.mb3.ph2.ph3-ns.book
-        img.mb3(src=book.cover)
+      a.w-50.w-third-m.w-25-ns.mb3.ph2.ph3-ns.book.link.dib.dim(href='http://www.amzn.com/#{book.ISBN}' target='_blank')
+        img.mb3(src='http://images.amazon.com/images/P/#{book.ISBN}.jpg')
         h3.f5.mb1.lh-title #{book.title} 
-          if (book.mustRead)
-            span.f6.tag.br1.ba.blue-link.mr1.ttu.tracked.b.dib.nowrap Favorite
+        if (book.mustRead)
+          p.f6.tag.br1.ba.blue-bg.white.mr1.ttu.tracked.b.dib.nowrap Favorite
         p.mb0.f6.o-80 #{book.author}
         p.mb0.f6.o-50 #{book.category}
   

@@ -1,13 +1,10 @@
-- function excerpt(content) {
--  return content.substring(0, 160) + '...'
--  }
 
 //- hack
 if (current.path[1] !== 'index') 
   .cf.center.ph2.ph3-m.ph5-ns.grid.mb3.wow.fadeInUp
     .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1
     .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns
-      h2.f3.f2-ns.fw6.tracked-tight.poppins Project
+      h2.f3.f2-ns.mb4.fw6.tracked-tight.poppins Project
 .cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp.mb5.mb5-ns
   .fl.w-100-m.w-25-ns.ph2.ph3-ns
     .w-75
@@ -19,12 +16,11 @@ if (current.path[1] !== 'index')
           .w-100.bg-black-20.aspect-ratio--4x3.mb3.relative
             img.absolute(src='/assets/#{slug}-thumbnail.png')
           div
-            h3.f5.b.mb2.fw6.lh-copy(style='letter-spacing: -0.025em')=project.title
+            h3.f5.b.mb2.fw6.lh-copy(style='letter-spacing: -0.025em')=project.title             
             div.mb3
               each category in project.category
-                span.f6.tag.br1.ba.blue-link.mr1.mb1.ttu.tracked.b.dib=category
+                span.f6.tag.br1.ba.blue-bg.white.mr1.mb1.ttu.tracked.b.dib=category
             p.mb2.normal=project.description
             //- != excerpt(partial('../thoughts/' + slug))
-            p.db.mb0.strike Learn more &rarr;
-            p.black-40 Coming soon.
-!=partial('../_shared/subscribe')
+            p.blue-link.mb0.strike Learn more &rarr;
+            p.black-40  (Coming soon. Subscribe below, and I'll get you updated!)

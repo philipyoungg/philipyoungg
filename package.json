@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "harp server & browser-sync start --proxy 'localhost:9000' --files *",
-    "publish": "trash www && harp compile && cd www && surge"
+    "publish": "trash www && harp compile && uglifyjs bundle.js -m -c -o www/bundle.js && cd www && surge"
   },
   "keywords": [],
   "author": "Philip Young Gunawan <hello@philipyoungg.com> (http://www.philipyoungg.com)",

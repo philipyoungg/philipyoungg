@@ -8,28 +8,28 @@
     "description": "Bukapintu is an exclusive community that matches companies with high quality candidate from top universities.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
-    "category": ["product design", "product dev.", "brand identity"]
+    "category": ["product design", "product dev.", "web design", "web dev.", "brand identity"]
   },
   "do-you-travel": {
     "title": "Do You Travel",
     "description": "Website redesign for Jack Morris, Instagram influencer with 1.8M followers.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
-    "category": ["product design", "product dev.", "graphic design"]
+    "category": ["web design", "web dev.", "graphic design"]
   },
   "startuplab": {
     "title": "Startup Lab",
     "description": "College startup lab is a 3-day intensive startup bootcamp that teaches participant the right way to build a startup.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
-    "category": ["product design", "product dev.", "brand identity", "photography"]
+    "category": ["web design", "web dev.", "brand identity", "photography"]
   },
   "salma-et-olivier": {
     "title": "Salma & Olivier",
     "description": "A website that designed with one specific objective in mind: to confirm seamsless guest attendance experience.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
-    "category": ["product design", "product dev."]
+    "category": ["web design", "web dev."]
   },
   "typography-combination": {
     "title": "Typography Combination",
@@ -40,7 +40,7 @@
   },
   "clock": {
     "title": "Classic Clock",
-    "description": "A simple clock with classic design. I developed this as a \"live screen saver\" while taking a rest.",
+    "description": "A simple clock with classic design. I developed this as a \"live screen saver\" on my browser.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
     "category": ["product design", "product dev."]
@@ -57,14 +57,14 @@
     "description": "The Bright Bulb designs high impact program to teach people fundamental skills such as design, writing, and personal branding.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
-    "category": ["slidedeck design", "interaction design", "brand identity", "copywriting"]
+    "category": ["slidedeck design", "brand identity", "copywriting", "content creation"]
   },
   "aiesec-mick-jagger": {
     "title": "AIESEC - Mick Jagger Poster",
     "description": "Poster design for recruitment campaign. Designed to attract students to join AIESEC—the biggest student organization in the world.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
-    "category": ["graphic design"]
+    "category": ["graphic design", "copywriting"]
   },
   "public-house": {
     "title": "Public House",
