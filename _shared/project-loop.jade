@@ -16,11 +16,11 @@ if (current.path[1] !== 'index')
           .w-100.bg-black-20.aspect-ratio--4x3.mb3.relative
             img.absolute(src='/assets/#{slug}-thumbnail.png')
           div
-            h3.f5.b.mb2.fw6.lh-copy(style='letter-spacing: -0.025em')=project.title             
-            div.mb3
+            h3.f5.b.mb2.fw6.lh-title.lh-copy-ns(style='letter-spacing: -0.025em')=project.title             
+            div.mb2.mb3-ns.cf
               each category in project.category
-                span.f6.tag.br1.ba.blue-bg.white.mr1.mb1.ttu.tracked.b.dib=category
-            p.mb2.normal=project.description
+                span.f7.f6-ns.tag.br1.ba.black-40.mr1.mb1.ttu.tracked.b.db.fl=category
+            p.f6.f5-ns.lh-copy-ns.mb2.normal=project.description
             //- != excerpt(partial('../thoughts/' + slug))
             p.blue-link.mb0.strike Learn more &rarr;
-            p.black-40  (Coming soon. Subscribe below, and I'll get you updated!)
+            p.f6.f5-ns.lh-title.lh-copy-ns.black-40 (Coming soon. Subscribe below, and I'll get you updated!)

@@ -6,31 +6,31 @@
   "how-i-discovered-the-root-cause-of-why-i-cant-sleep-easily": {
     "title": "How I Discovered The Root Cause of Why I Can’t Sleep Easily",
     "date": "5 April 2017",
+    "featuredImage": "sleep-problem",
     "description": "I remember back when I was in college. It was the middle of second semester. It’s the busiest semester we (my classmates and I) had. The lecturer gave us tons of assignment. Who loves working on assignment? We need a rest! What funny is when it’s Friday, we are relieved. But what we don’t know is, the cycle will repeat itself the very next week."
-  },
-  "all-blogposts-gone": {
-    "title": "All Blogposts—Gone 😭",
-    "date": "4 November 2016",
-    "description": "My blog posts from last 3 years are all gone. The hosting provider told that they didn't kept any backup (lesson learned: backup). Meanwhile, I tried to manually add posts that saved on my local computer."
   },
   "change-your-life-change-your-environment": {
     "title": "How to Change Your Life: Start Changing Your Environment",
     "date": "14 September 2016",
+    "featuredImage": "change-environment",
     "description": "Changing your life is not that hard. Knowing this one trick could help wonders."
   },
   "employed-vs-self-employed-my-decision-after-graduation": {
     "title": "Employed Vs Self Employed: My Decision After Graduation",
     "date": "21 March 2015",
+    "featuredImage": "decision-after-graduation",
     "description": "2015 is one of my productive and life changing year ever. I learned a ton, achieved a ton, and sadly—lost tons of time here. This is also the same year I graduated from college and entered adult life. At last, I can focus on what matters now."
   },
   "how-a-small-favor-to-others-change-my-whole-life": {
     "title": "How a Small Favor to Others, Changed My Whole Life",
     "date": "5 June 2014",
+    "featuredImage": "help-other",
     "description": "About three weeks ago, one of my college friend asked me to accompany him to local computer store and get a new laptop. I got nothing else to do so I agreed and went with him to International Trade Center in BSD City."
   },
   "definition-of-design-and-the-difference-with-art": {
     "title": "Definition of Design—and The Difference With Art",
     "date": "25 August 2014",
+    "featuredImage": "design-and-art",
     "description": "Society interpret design as sketches, painting, packaging. Some of them take it as a product—camera, phone, sofa, and chairs. It's true, but design is not that limited. In fact, design is broad."
   }
 }

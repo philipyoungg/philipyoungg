@@ -13,8 +13,10 @@ if (current.path[1] !== 'index')
   .fl.w-100-m.w-75-ns.flex.flex-wrap        
     each post, slug in public.thoughts._data
       if slug !== 'index'
-        a.thoughts.db.link.dim.mb4.w-50.w-third-m.replace.w-third-ns.ph2.ph3-ns(href='/thoughts/' + slug)
-          h3.f5.b.mb1.fw6.lh-copy(style='letter-spacing: -0.025em')=post.title
-          h6.f6.mb2.o-40.normal= post.date
+        a.thoughts.db.link.dim.mb4.w-100.w-third-m.w-third-ns.ph2.ph3-ns(href='/thoughts/' + slug)
+          .aspect-ratio--16x9.relative.overflow-hidden.mb3
+            img.absolute(src='/assets/#{post.featuredImage}.jpg')
+          h6.b.f6.mb1.o-50.normal= post.date
+          h3.f5.b.mb3.fw6.lh-copy(style='letter-spacing: -0.025em')=post.title
           != excerpt(partial('../thoughts/' + slug))
           p.underline.blue-link.db Read more &rarr;

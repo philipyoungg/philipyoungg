@@ -1,0 +1,15 @@
+.cf.center.ph2.ph3-m.ph5-ns.grid
+  .fl.w-100.w-100-m.w-25-ns.h1.dn.db-ns
+  .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.wow.fadeInUp
+    h2.f3.f2-ns.fw6.tracked-tight.poppins Instagram
+.cf.center.ph2.ph3-m.ph5-ns.grid
+  .fl.w-100.w-100-m.w-25-ns.h1.dn.db-ns
+  .fl.w-100.w-100-m.w-75-ns.wow.fadeInUp
+    #instafeed
+script.
+  var feed = new Instafeed({
+    get: 'user',
+    userId: 3659828,
+    accessToken: '3659828.6974e58.098b38ceb09c49f59df610eec9db535d',
+    resolution: 'standard_resolution',
+  }).run()
