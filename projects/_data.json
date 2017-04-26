@@ -8,6 +8,7 @@
     "description": "Bukapintu is an exclusive community that matches companies with high quality candidate from top universities.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
+    "published": true,
     "category": ["product design", "product dev.", "web design", "web dev.", "brand identity"]
   },
   "do-you-travel": {
@@ -15,6 +16,7 @@
     "description": "Website redesign for Jack Morris, Instagram influencer with 1.8M followers.",
     "imageLink": "https://mir-s3-cdn-cf.behance.net/projects/404/17554215.548ca1074db71.png",
     "date": "5 April 2017",
+    "published": true,
     "category": ["web design", "web dev.", "graphic design"]
   },
   "startuplab": {

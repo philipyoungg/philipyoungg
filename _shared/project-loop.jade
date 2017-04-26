@@ -12,15 +12,26 @@ if (current.path[1] !== 'index')
   .fl.w-100-m.w-75-ns.flex.flex-wrap        
     each project, slug in public.projects._data
       if slug !== 'index'
-        div.thoughts.project.db.link.mb4.mb5-ns.w-50.w-third-m.replace.w-third-ns.ph2.ph3-ns(href='/projects/' + slug)
-          .w-100.bg-black-20.aspect-ratio--4x3.mb3.relative
-            img.absolute(src='/assets/#{slug}-thumbnail.png')
-          div
-            h3.f5.b.mb2.fw6.lh-title.lh-copy-ns(style='letter-spacing: -0.025em')=project.title             
-            div.mb2.mb3-ns.cf
-              each category in project.category
-                span.f7.f6-ns.tag.br1.ba.black-40.mr1.mb1.ttu.tracked.b.db.fl=category
-            p.f6.f5-ns.lh-copy-ns.mb2.normal=project.description
-            //- != excerpt(partial('../thoughts/' + slug))
-            p.blue-link.mb0.strike Learn more &rarr;
-            p.f6.f5-ns.lh-title.lh-copy-ns.black-40 (Coming soon. Subscribe below, and I'll get you updated!)
+        if project.published
+          a.thoughts.project.db.link.dim.mb4.mb5-ns.w-50.w-third-m.w-third-ns.ph2.ph3-ns(href='/projects/' + slug)
+            .w-100.bg-black-20.aspect-ratio--4x3.mb3.relative
+              img.absolute(src='/assets/bg.png' data-src='/assets/#{slug}-thumbnail.png')
+            .w-100
+              h3.poppins.f5.b.mb2.fw6.lh-title.lh-copy-ns(style='letter-spacing: -0.025em')=project.title     
+              div.mb2.mb3-ns.cf
+                each category in project.category
+                  span.f7.f6-ns.tag.br1.ba.black-40.mr1.mb1.ttu.tracked.b.db.fl=category
+              p.f6.f5-ns.lh-copy-ns.mb2.normal=project.description
+              p.blue-link.mb0 Learn more &rarr;
+        else
+          .o-50.w-50.w-third-m.w-third-ns
+            div.thoughts.project.db.link.mb4.mb5-ns.ph2.ph3-ns(href='/projects/' + slug)
+              .w-100.bg-black-20.aspect-ratio--4x3.mb3.relative
+                img.absolute(src='/assets/bg.png' data-src='/assets/#{slug}-thumbnail.png')
+              .w-100
+                h3.poppins.f5.b.mb2.fw6.lh-title.lh-copy-ns(style='letter-spacing: -0.025em')=project.title     
+                div.mb2.mb3-ns.cf
+                  each category in project.category
+                    span.f7.f6-ns.tag.br1.ba.black-40.mr1.mb1.ttu.tracked.b.db.fl=category
+                p.f6.f5-ns.lh-copy-ns.mb2.normal=project.description
+                p.blue-link.mb0.strike (Coming soon. Subscribe below, and I'll get you updated!)

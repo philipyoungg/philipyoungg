@@ -15,14 +15,18 @@
 //-     p.dtc.w2.w4-ns.tr.f6.f5-ns
 //-       a.link.dn.dib-ns.black-80.b(href='/') Philip Young
 //-       a.link.dib.dn-ns.black-80.b(href='/') PY
-ul.list.pl0
-  li.dib.dib-m.db-ns.tc.tl-ns.mr3.mr4-m.mr0-ns
-    a.dim(href='/' class=current.path[0] === 'index' ? 'softBlue link' : '') Home &rarr;
-  li.dib.dib-m.db-ns.tc.tl-ns.mr3.mr4-m.mr0-ns
-    a.dim(href='/projects' class=current.path[0] === 'projects' ? 'softBlue link' : '') Projects &rarr;
-  li.dib.dib-m.db-ns.tc.tl-ns.mr3.mr4-m.mr0-ns
-    a.dim(href='/thoughts' class=current.path[0] === 'thoughts' ? 'softBlue link' : '') Thoughts &rarr;
-  li.dib.dib-m.db-ns.tc.tl-ns.mr3.mr4-m.mr0-ns
-    a.dim(href='/books' class=current.path[0] === 'books' ? 'softBlue link' : '') Books &rarr;
-  li.dib.dib-m.db-ns.tc.tl-ns.mr3.mr4-m.mr0-ns
-    a.dim(href='/inquiry' class=current.path[0] === 'inquiry' ? 'softBlue link' : '') Inquiry &rarr;
+.cf.center.ph2.ph3-m.ph5-ns.grid.pb4.pb5-m.pb6-ns.pt4.pt5-ns
+  .fl.w-33.w-33-m.w-25-ns.ph2.ph3-ns
+    a.f4.f4-m.f3-ns.poppins.fw6.tracked-tight.link.black-80(href='/') 
+      span.dn.db-ns.dim Philip Young
+      span.db.dn-ns.dim PY 
+  .fr.w-67.w-67-m.w-75-ns.ph2.ph3-ns
+    ul.list.pl0.tr
+      li.dib.mr3.mr4-ns
+        a.dim(href='/projects' class=current.path[0] === 'projects' ? 'softBlue link' : '') Projects &rarr;
+      li.dib.mr3.mr4-ns
+        a.dim(href='/thoughts' class=current.path[0] === 'thoughts' ? 'softBlue link' : '') Thoughts &rarr;
+      li.dib.mr3.mr4-ns
+        a.dim(href='/books' class=current.path[0] === 'books' ? 'softBlue link' : '') Books &rarr;
+      li.dib.mr3.mr4-ns
+        a.dim(href='/inquiry' class=current.path[0] === 'inquiry' ? 'softBlue link' : '') Inquiry &rarr;

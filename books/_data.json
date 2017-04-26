@@ -4,347 +4,365 @@
     "description": "Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co"
   },
   "books": [
- {
-   "mustRead": 1,
-   "title": "The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich",
-   "author": "Timothy Ferris",
-   "category": "Self-improvement",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0091929113"
- },
- {
-   "mustRead": 0,
-   "title": "Tools of Titans: The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers",
-   "author": "Timothy Ferris",
-   "category": "Biography",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1328683788"
- },
- {
-   "mustRead": 0,
-   "title": "Rock Breaks Scissors: A Practical Guide to Outguessing and Outwitting Almost Everybody",
-   "author": "William Poundstone",
-   "category": "Statistics",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0316228060"
- },
- {
-   "mustRead": 0,
-   "title": "Are You Smart Enough to Work at Google?",
-   "author": "William Poundstone",
-   "category": "Interviewing",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0316099988"
- },
- {
-   "mustRead": 1,
-   "title": "7 Habits of Highly Effective People",
-   "author": "Stephen R. Covey",
-   "category": "Self-improvement",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1476740054"
- },
- {
-   "mustRead": 1,
-   "title": "How to Win Friends and Influence People",
-   "author": "Dale Carnegie",
-   "category": "Self-improvement",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0671027034"
- },
- {
-   "mustRead": 1,
-   "title": "Elon Musk",
-   "author": "Ashley Vance",
-   "category": "Biography",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0062301233"
- },
- {
-   "mustRead": 1,
-   "title": "Thinking Fast and Slow",
-   "author": "Daniel Kahneman",
-   "category": "Psychology",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0374533555"
- },
- {
-   "mustRead": 0,
-   "title": "Wait: The Art and Science of Delay",
-   "author": "Frank Partnoy",
-   "category": "Psychology",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1610392477"
- },
- {
-   "mustRead": 0,
-   "title": "The Catcher In The Rye",
-   "author": "J.D. Salinger",
-   "category": "Fiction",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0316769487"
- },
- {
-   "mustRead": 0,
-   "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
-   "author": "Haruki Murakami",
-   "category": "Fiction",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0804170126"
- },
- {
-   "mustRead": 1,
-   "title": "Eragon (4 Books)",
-   "author": "Christopher Paolini",
-   "category": "Fiction",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0375826696"
- },
- {
-   "mustRead": 0,
-   "title": "Twilight (4 Books)",
-   "author": "Stephanie Meyer",
-   "category": "Fiction",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1904233651"
- },
- {
-   "mustRead": 1,
-   "title": "The Alchemist",
-   "author": "Paulo Coelho",
-   "category": "Fiction",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0722532938"
- },
- {
-   "mustRead": 1,
-   "title": "Manuscript Found in Accra",
-   "author": "Paulo Coelho",
-   "category": "Fiction",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0345805054"
- },
- {
-   "mustRead": 1,
-   "title": "Eat, Pray, Love: One Woman's Search for Everything Across Italy, India and Indonesia",
-   "author": "Elizabeth Gilbert",
-   "category": "Travel Writing",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0143038419"
- },
- {
-   "mustRead": 0,
-   "title": "The Art of Woo: Using Strategic Persuasion to Sell Your Ideas",
-   "author": "G. Richard Shell",
-   "category": "Psychology",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0143114042"
- },
- {
-   "mustRead": 1,
-   "title": "Contagious: Why Things Catch On",
-   "author": "Jonah Berger",
-   "category": "Psychology",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1451686587"
- },
- {
-   "mustRead": 0,
-   "title": "Made to Stick",
-   "author": "Chip Heath and Dan Heath",
-   "category": "Psychology",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1400064287"
- },
- {
-   "mustRead": 0,
-   "title": "Outliers: The Story of Success",
-   "author": "Malcolm Gladwell",
-   "category": "Statistics",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0316017930"
- },
- {
-   "mustRead": 0,
-   "title": "Tribes: We Need You to Lead Us",
-   "author": "Seth Godin",
-   "category": "Business",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0749939753"
- },
- {
-   "mustRead": 0,
-   "title": "Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers",
-   "author": "Alexander Osterwalder and Yves Pigneur",
-   "category": "Business",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0470876417"
- },
- {
-   "mustRead": 0,
-   "title": "The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future",
-   "author": "Chris Guillebeau",
-   "category": "Business",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0307951529"
- },
- {
-   "mustRead": 1,
-   "title": "Traction: How Any Startup Can Achieve Explosive Customer Growth",
-   "author": "Gabriel Weinberg and Justin Mares",
-   "category": "Business",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0241242533"
- },
- {
-   "mustRead": 1,
-   "title": "The Alchemyst: The Secrets of the Immortal Nicholas Flamel (6 Books)",
-   "author": "Michael Scott",
-   "category": "Fiction",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0385736002"
- },
- {
-   "mustRead": 1,
-   "title": "The Power of Habit: Why We Do What We Do in Life",
-   "author": "Charless Duhigg",
-   "category": "Self-improvement",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "081298160X"
- },
- {
-   "mustRead": 0,
-   "title": "Get Some Headspace",
-   "author": "Andy Pudicombe",
-   "category": "Meditation",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1444722204"
- },
- {
-   "mustRead": 0,
-   "title": "The Power of Now: A Guide to Spiritual Enlightenment",
-   "author": "Eckhart Tolle",
-   "category": "Meditation",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1577314808"
- },
- {
-   "mustRead": 0,
-   "title": "The Tipping Point",
-   "author": "Malcolm Gladwell",
-   "category": "Statistics",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0316346624"
- },
- {
-   "mustRead": 1,
-   "title": "The Little Prince",
-   "author": "Antoine de Saint-Exupery and Richard Howard",
-   "category": "Fiction",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0156012197"
- },
- {
-   "mustRead": 1,
-   "title": "Getting Things Done",
-   "author": "Paul Allen",
-   "category": "Self-improvement",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0142000280"
- },
- {
-   "mustRead": 0,
-   "title": "Zero to One: Notes on Startups, or How to Build the Future ",
-   "author": "Peter Thiel",
-   "category": "Business",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0804139296"
- },
- {
-   "mustRead": 1,
-   "title": "Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley",
-   "author": "Antonio Garcia Martinez",
-   "category": "Business",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0062458191"
- },
- {
-   "mustRead": 1,
-   "title": "I Think, Therefore I am",
-   "author": "Lesley Levene",
-   "category": "Philosophy",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1782430245"
- },
- {
-   "mustRead": 1,
-   "title": "Man's Search for Meaning",
-   "author": "Viktor E. Frankl",
-   "category": "Psychology",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "080701429X"
- },
- {
-   "mustRead": 0,
-   "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
-   "author": "Susan Cain",
-   "category": "Psychology",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0307352153"
- },
- {
-   "mustRead": 0,
-   "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
-   "author": "Joshua Foer",
-   "category": "Psychology",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "0143120530"
- },
- {
-   "mustRead": 0,
-   "title": "Like a Virgin: Secrets They Won't Teach You at Business School",
-   "author": "Richard Branson",
-   "category": "Biography",
-   "description": "",
-   "amazonLink": "",
-   "ISBN": "1591845688"
- }
+  {
+    "mustRead": "1",
+    "title": "The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich",
+    "author": "Timothy Ferris",
+    "category": "Self-improvement",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0091929113"
+  },
+  {
+    "mustRead": "0",
+    "title": "Tools of Titans: The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers",
+    "author": "Timothy Ferris",
+    "category": "Biography",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1328683788"
+  },
+  {
+    "mustRead": "0",
+    "title": "Rock Breaks Scissors: A Practical Guide to Outguessing and Outwitting Almost Everybody",
+    "author": "William Poundstone",
+    "category": "Statistics",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0316228060"
+  },
+  {
+    "mustRead": "0",
+    "title": "Are You Smart Enough to Work at Google?",
+    "author": "William Poundstone",
+    "category": "Interviewing",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0316099988"
+  },
+  {
+    "mustRead": "1",
+    "title": "7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "category": "Self-improvement",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1476740054"
+  },
+  {
+    "mustRead": "1",
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "category": "Self-improvement",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0671027034"
+  },
+  {
+    "mustRead": "1",
+    "title": "Elon Musk",
+    "author": "Ashley Vance",
+    "category": "Biography",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0062301233"
+  },
+  {
+    "mustRead": "1",
+    "title": "Thinking Fast and Slow",
+    "author": "Daniel Kahneman",
+    "category": "Psychology",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0374533555"
+  },
+  {
+    "mustRead": "0",
+    "title": "Wait: The Art and Science of Delay",
+    "author": "Frank Partnoy",
+    "category": "Psychology",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1610392477"
+  },
+  {
+    "mustRead": "0",
+    "title": "The Catcher In The Rye",
+    "author": "J.D. Salinger",
+    "category": "Fiction",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0316769487"
+  },
+  {
+    "mustRead": "0",
+    "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+    "author": "Haruki Murakami",
+    "category": "Fiction",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0804170126"
+  },
+  {
+    "mustRead": "1",
+    "title": "Eragon (4 Books)",
+    "author": "Christopher Paolini",
+    "category": "Fiction",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0375826696"
+  },
+  {
+    "mustRead": "0",
+    "title": "Twilight (4 Books)",
+    "author": "Stephanie Meyer",
+    "category": "Fiction",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1904233651"
+  },
+  {
+    "mustRead": "1",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "category": "Fiction",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0722532938"
+  },
+  {
+    "mustRead": "1",
+    "title": "Manuscript Found in Accra",
+    "author": "Paulo Coelho",
+    "category": "Fiction",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0345805054"
+  },
+  {
+    "mustRead": "1",
+    "title": "Eat, Pray, Love: One Woman's Search for Everything Across Italy, India and Indonesia",
+    "author": "Elizabeth Gilbert",
+    "category": "Travel Writing",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0143038419"
+  },
+  {
+    "mustRead": "0",
+    "title": "The Art of Woo: Using Strategic Persuasion to Sell Your Ideas",
+    "author": "G. Richard Shell",
+    "category": "Psychology",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0143114042"
+  },
+  {
+    "mustRead": "1",
+    "title": "Contagious: Why Things Catch On",
+    "author": "Jonah Berger",
+    "category": "Psychology",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1451686587"
+  },
+  {
+    "mustRead": "0",
+    "title": "Made to Stick",
+    "author": "Chip Heath and Dan Heath",
+    "category": "Psychology",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1400064287"
+  },
+  {
+    "mustRead": "0",
+    "title": "Outliers: The Story of Success",
+    "author": "Malcolm Gladwell",
+    "category": "Statistics",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0316017930"
+  },
+  {
+    "mustRead": "0",
+    "title": "Tribes: We Need You to Lead Us",
+    "author": "Seth Godin",
+    "category": "Business",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0749939753"
+  },
+  {
+    "mustRead": "0",
+    "title": "Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers",
+    "author": "Alexander Osterwalder and Yves Pigneur",
+    "category": "Business",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0470876417"
+  },
+  {
+    "mustRead": "0",
+    "title": "The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future",
+    "author": "Chris Guillebeau",
+    "category": "Business",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0307951529"
+  },
+  {
+    "mustRead": "1",
+    "title": "Traction: How Any Startup Can Achieve Explosive Customer Growth",
+    "author": "Gabriel Weinberg and Justin Mares",
+    "category": "Business",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0241242533"
+  },
+  {
+    "mustRead": "1",
+    "title": "The Alchemyst: The Secrets of the Immortal Nicholas Flamel (6 Books)",
+    "author": "Michael Scott",
+    "category": "Fiction",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0385736002"
+  },
+  {
+    "mustRead": "1",
+    "title": "The Power of Habit: Why We Do What We Do in Life",
+    "author": "Charless Duhigg",
+    "category": "Self-improvement",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "081298160X"
+  },
+  {
+    "mustRead": "0",
+    "title": "Get Some Headspace",
+    "author": "Andy Pudicombe",
+    "category": "Meditation",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1444722204"
+  },
+  {
+    "mustRead": "0",
+    "title": "The Power of Now: A Guide to Spiritual Enlightenment",
+    "author": "Eckhart Tolle",
+    "category": "Meditation",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1577314808"
+  },
+  {
+    "mustRead": "0",
+    "title": "The Tipping Point",
+    "author": "Malcolm Gladwell",
+    "category": "Statistics",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0316346624"
+  },
+  {
+    "mustRead": "1",
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupery and Richard Howard",
+    "category": "Fiction",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0156012197"
+  },
+  {
+    "mustRead": "1",
+    "title": "Getting Things Done",
+    "author": "Paul Allen",
+    "category": "Self-improvement",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0142000280"
+  },
+  {
+    "mustRead": "0",
+    "title": "Zero to One: Notes on Startups, or How to Build the Future",
+    "author": "Peter Thiel",
+    "category": "Business",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0804139296"
+  },
+  {
+    "mustRead": "1",
+    "title": "Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley",
+    "author": "Antonio Garcia Martinez",
+    "category": "Business",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0062458191"
+  },
+  {
+    "mustRead": "1",
+    "title": "I Think, Therefore I am",
+    "author": "Lesley Levene",
+    "category": "Philosophy",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1782430245"
+  },
+  {
+    "mustRead": "1",
+    "title": "Man's Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "category": "Psychology",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "080701429X"
+  },
+  {
+    "mustRead": "0",
+    "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+    "author": "Susan Cain",
+    "category": "Psychology",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0307352153"
+  },
+  {
+    "mustRead": "0",
+    "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
+    "author": "Joshua Foer",
+    "category": "Psychology",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0143120530"
+  },
+  {
+    "mustRead": "0",
+    "title": "Like a Virgin: Secrets They Won't Teach You at Business School",
+    "author": "Richard Branson",
+    "category": "Biography",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "1591845688"
+  },
+  {
+    "mustRead": "1",
+    "title": "Getting Naked: A Business Fable About Shedding The Three Fears That Sabotage Client Loyalty",
+    "author": "Patrick Lencioni",
+    "category": "Management",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0787976393"
+  },
+  {
+    "mustRead": "1",
+    "title": "It's Not How Good You Are, It's How Good You Want to Be",
+    "author": "Paul Arden",
+    "category": "Advertising",
+    "description": "",
+    "amazonLink": "",
+    "ISBN": "0714843377"
+  }
 ]
 }
