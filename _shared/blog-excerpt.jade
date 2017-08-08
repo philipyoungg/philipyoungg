@@ -4,19 +4,19 @@
 
 //- hack
 if (current.path[1] !== 'index') 
-  .cf.center.ph2.ph3-m.ph5-ns.grid.mb3.wow.fadeInUp
-    .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1
-    .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns
-      h2.f3.f2-ns.mb4.fw6.tracked-tight.poppins Thoughts
-.cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp.mb5.mb5-ns
+  .cf.center.ph3.ph5-ns.grid.mb3.wow.fadeInUp
+    .fl.w-100.w-100-m.w-25-ns.ph3.h1
+    .fl.w-100.w-100-m.w-75-ns.ph3
+      h1.f1.f-subheadline-ns.poppins.tracked-tight.mb3.lh-title Thoughts.
+.cf.center.ph3.ph5-ns.grid.wow.fadeInUp.mb5.mb5-ns
   .fl.w-100-m.w-25-ns.h1
   .fl.w-100-m.w-75-ns.flex.flex-wrap        
     each post, slug in public.thoughts._data
       if slug !== 'index'
-        a.thoughts.db.link.dim.mb4.w-100.w-third-m.w-third-ns.ph2.ph3-ns(href='/thoughts/' + slug)
+        a.thoughts.db.link.dim.mb4.w-100.w-third-m.w-third-ns.ph3(href='/thoughts/' + slug)
           .aspect-ratio--16x9.relative.overflow-hidden.mb3
             img.absolute(src='/assets/bg.png' data-src='/assets/#{post.featuredImage}.jpg')
           h6.b.f6.mb1.o-50.normal= post.date
-          h3.poppins.f5.b.mb3.fw6.lh-copy(style='letter-spacing: -0.025em')=post.title
+          h3.poppins.f4.f5-ns.b.mb3.fw6.lh-copy(style='letter-spacing: -0.025em')=post.title
           != excerpt(partial('../thoughts/' + slug))
           p.underline.blue-link.db Read more &rarr;

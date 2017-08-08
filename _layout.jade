@@ -43,14 +43,14 @@ html(lang='en')
     meta(name="description" content=shareDescription)
   body.lh-copy.bg-mint.w-100.overflow-x-hidden
     // grid
-    .fixed.cf.ph2.ph3-m.ph5-ns.w-100.vh-100.absolute-horizontal-center.grid(style='pointer-events: none')
-      .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
+    .fixed.cf.ph3.ph5-ns.w-100.vh-100.absolute-horizontal-center.grid(style='pointer-events: none')
+      .fl.w-50.w-third-m.replace.w-25-ns.ph3.h-100
         .bl.b--black-05.h-100
-      .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
+      .fl.w-50.w-third-m.replace.w-25-ns.ph3.h-100
         .bl.b--black-05.h-100
-      .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100
+      .fl.w-50.w-third-m.replace.w-25-ns.ph3.h-100
         .bl.b--black-05.h-100
-      .fl.w-50.w-third-m.replace.w-25-ns.ph2.ph3-ns.h-100.br.b--black-05
+      .fl.w-50.w-third-m.replace.w-25-ns.ph3.h-100.br.b--black-05
         .bl.b--black-05.h-100
     .vs-section
       #loading.fixed.w-100.h-100.relative.o-0(style='visibility: hidden')
@@ -60,19 +60,19 @@ html(lang='en')
       #app
         !=partial('_shared/nav')
         if (current.path[0] === 'thoughts' && current.path[1] !=='index')
-          .cf.center.ph2.ph3-m.ph5-ns.grid
-            .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.mb3.mb4-m.mb0-ns.h1
-            .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.wow.fadeInUp
-                h1.f3.f1-m.f-subheadline-ns.poppins.tracked-tight.mb4.mb5-ns
+          .cf.center.ph3.ph5-ns.grid
+            .fl.w-100.w-100-m.w-25-ns.ph3.mb3.mb4-m.mb0-ns.h1
+            .fl.w-100.w-100-m.w-75-ns.ph3.wow.fadeInUp
+                h1.f1.f-subheadline-ns.poppins.tracked-tight.mb4.mb5-ns
                   =title
-          .cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp
-            .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1.dn.db-ns
-            article.fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns.mb4.mb5-ns.measure-wide
+          .cf.center.ph3.ph5-ns.grid.wow.fadeInUp
+            .fl.w-100.w-100-m.w-25-ns.ph3.h1.dn.db-ns
+            article.fl.w-100.w-100-m.w-75-ns.ph3.mb4.mb5-ns.measure-wide
               !=yield
           !=partial('_shared/subscribe')
           .cf.ph3.ph4-m.ph5-ns.center.grid.mb4.mb5-ns.wow.fadeInUp
             .fl.w-100.w-25-ns.dn.dn-m.db.h1
-            .fl.w-100.w-67-m.w-50-ns.ph2.ph3-ns.pv4
+            .fl.w-100.w-67-m.w-50-ns.ph3.pv4
               #disqus_thread
           !=partial('_shared/blog-excerpt')
         else

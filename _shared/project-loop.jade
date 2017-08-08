@@ -1,19 +1,19 @@
 
 //- hack
 if (current.path[1] !== 'index') 
-  .cf.center.ph2.ph3-m.ph5-ns.grid.mb3.wow.fadeInUp
-    .fl.w-100.w-100-m.w-25-ns.ph2.ph3-ns.h1
-    .fl.w-100.w-100-m.w-75-ns.ph2.ph3-ns
-      h2.f3.f2-ns.mb4.fw6.tracked-tight.poppins Project
-.cf.center.ph2.ph3-m.ph5-ns.grid.wow.fadeInUp.mb5.mb5-ns
-  .fl.w-100-m.w-25-ns.ph2.ph3-ns
+  .cf.center.ph3.ph5-ns.grid.mb3.wow.fadeInUp
+    .fl.w-100.w-100-m.w-25-ns.ph3.h1
+    .fl.w-100.w-100-m.w-75-ns.ph3
+      h1.f1.f-subheadline-ns.poppins.tracked-tight.mb3.lh-title Projects.
+.cf.center.ph3.ph5-ns.grid.wow.fadeInUp.mb5.mb5-ns
+  .fl.w-100-m.w-25-ns.ph3
     .w-75
-      p.o-70.f6.disclaimer Project section are in progress. You can expect everything to be accesible around May 2017.
+      p.o-70.f6.disclaimer Project section are in progress.
   .fl.w-100-m.w-75-ns.flex.flex-wrap        
     each project, slug in public.projects._data
       if slug !== 'index'
         if project.published
-          a.thoughts.project.db.link.dim.mb4.mb5-ns.w-50.w-third-m.w-third-ns.ph2.ph3-ns(href='/projects/' + slug)
+          a.thoughts.project.db.link.dim.mb4.mb5-ns.w-50.w-third-m.w-third-ns.pl3.pr0.pr3-ns(href='/projects/' + slug)
             .w-100.bg-black-20.aspect-ratio--4x3.mb3.relative
               img.absolute(src='/assets/bg.png' data-src='/assets/#{slug}-thumbnail.png')
             .w-100
@@ -22,10 +22,10 @@ if (current.path[1] !== 'index')
                 each category in project.category
                   span.f7.f6-ns.tag.br1.ba.black-40.mr1.mb1.ttu.tracked.b.db.fl=category
               p.f6.f5-ns.lh-copy-ns.mb2.normal=project.description
-              p.blue-link.mb0 Learn more &rarr;
+              p.blue-link.mb0.underline Learn more &rarr;
         else
           .o-50.w-50.w-third-m.w-third-ns
-            div.thoughts.project.db.link.mb4.mb5-ns.ph2.ph3-ns(href='/projects/' + slug)
+            div.thoughts.project.db.link.mb4.mb5-ns.pl3.pr0.pr3-ns(href='/projects/' + slug)
               .w-100.bg-black-20.aspect-ratio--4x3.mb3.relative
                 img.absolute(src='/assets/bg.png' data-src='/assets/#{slug}-thumbnail.png')
               .w-100

@@ -646,15 +646,15 @@ h1 {
 }
 
 .blue-bg {
-  background: hsl(207, 60%, 60%);
+  background: hsl(208, 71%, 55%);
 }
 
 .blue-link {
-  color: hsl(207, 60%, 60%);
+  color: hsl(208, 71%, 55%);
 }
 
 a {
-  color: hsl(207, 60%, 60%);
+  color: hsl(208, 71%, 55%);
   &:hover {
     opacity: .6;
     transition: .3s ease-in-out;
@@ -680,7 +680,7 @@ h5,
 h6,
 li,
 p {
-  color: hsl(214, 21%, 27%);
+  color: hsl(214, 30%, 23%);
 }
 
 #info {
@@ -839,8 +839,8 @@ article {
   #instafeed {
     column-count: 2;
     & a {
-      padding-left: .5rem;
-      margin-bottom: .5rem;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
       display: block;
       & img {
         display: block;
