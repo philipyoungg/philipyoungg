@@ -3,9 +3,7 @@
   .fl.w-100.w-100-m.w-75-ns.ph3.wow.fadeInUp
     h1.f2.f-subheadline-ns.poppins.tracked-tight.mb3.mb5-ns.lh-title.mb4-ns Books I&rsquo;ve Read.
 .cf.center.ph3.ph5-ns.grid.mb5.mb5-ns.wow.fadeInUp
-  .fl.w-100-m.w-25-ns.ph3
-    .w-75
-      p.o-70.f6.disclaimer Currenly unfinished. TODO: add must read, filter, and category.
+  .fl.w-100-m.w-25-ns.ph3.h1
   .fl.w-100-m.w-75-ns.flex.flex-wrap.items-baseline
     - var books = public.books._data.books.sort(function(a, b){
     -   if (a.category === b.category) {
@@ -15,7 +13,7 @@
     - })
     each book in books
       a.w-50.w-third-m.w-25-ns.mb3.ph3.book.link.dib.dim.min-h3(href='http://www.amzn.com/#{book.ISBN}' target='_blank')
-        img.mb3(src='/assets/bg.png' data-src='http://images.amazon.com/images/P/#{book.ISBN}.jpg')
+        img.mb3.shadow-1(src='/assets/bg.png' data-src='http://images.amazon.com/images/P/#{book.ISBN}.jpg')
         h3.poppins.f5.mb1.lh-title #{book.title} 
         if (book.mustRead === '1')
           p.f6.tag.br1.ba.blue-bg.white.mr1.ttu.tracked.b.dib.nowrap Favorite
