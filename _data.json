@@ -20,5 +20,280 @@
   "thanks": {
     "title": "Thanks",
     "description": "Thank you"
-  }
+  },
+  "bucket-list": {
+    "title": "Bucket List",
+    "description": "Always updated bucket list"
+  },
+  "list": [
+    {
+      "title": "Speak in front of > 100 people"
+    },
+    { "title": "Charter a private jet",
+      "description": "Expensive AF. But I hate airline experience that much"
+    },
+    {
+      "title": "Exercise regularly"
+    },
+    {
+      "title": "Get a muscular body"
+    },
+    {
+      "title": "Visit Yogyakarta for several days"
+    },
+    {
+      "title": "3 months Eurotrip!"
+    },
+    {
+      "title": "Visit New Zealand"
+    },
+    {
+      "title": "Visit Copenhagen"
+    },
+    {
+      "title": "Visit Silicon Valley"
+    },
+    {
+      "title": "Wake up regularly for a month at 5"
+    },
+    {
+      "title": "Have a straight back"
+    },
+    {
+      "title": "Approach stranger firsthand and talk during networking events",
+      "completed": true,
+      "description": "August 2017, Bali Trip"
+    },
+    {
+      "title": "Use couchsurving"
+    },
+    {
+      "title": "Came to one of meetup.com event"
+    },
+    {
+      "title": "Create a todo app",
+      "completed": true,
+      "description": "April 2017, http://www.getcontextual.com"
+    },
+    {
+      "title": "See northen lights"
+    },
+    {
+      "title": "Live in monastery for two weeks"
+    },
+    {
+      "title": "Release a short movie"
+    },
+    {
+      "title": "Be good at portrait photography"
+    },
+    {
+      "title": "Create habit tracker app"
+    },
+    {
+      "title": "Skydiving!"
+    },
+    {
+      "title": "Learn to dance"
+    },
+    {
+      "title": "Create portfolio website",
+      "completed": true,
+      "description": "March 2017, http://www.philipyoungg.com"
+    },
+    {
+      "title": "Design and build a stool"
+    },
+    {
+      "title": "Design and build a table"
+    },
+    {
+      "title": "Design my own house"
+    },
+    {
+      "title": "Buy Fuji X100 / equivalent",
+      "completed": true,
+      "description": "January 2017, secondhand"
+    },
+    {
+      "title": "Buy a Macbook",
+      "completed": true,
+      "description": "September 2015, secondhand"
+    },
+    {
+      "title": "Buy Airpod",
+      "completed": true,
+      "description": "August 2017, Apple Store. First time I but new! Wouldn't ever buy Apple Computer new though. Overpriced."
+    },
+    {
+      "title": "Make a business: tailored clothes"
+    },
+    {
+      "title": "Live two week in Eastern Europe (Budapest, etc)"
+    },
+    {
+      "title": "Travel alone",
+      "completed": true,
+      "description": "August 2017, Bali Trip"
+    },
+    {
+      "title": "Business: start a franchise"
+    },
+    {
+      "title": "Visit Greece"
+    },
+    {
+      "title": "Sleep consistently before 10PM for a month"
+    },
+    {
+      "title": "Get LV Keepal Bandouliere 45 / 50"
+    },
+    {
+      "title": "Try to live in a hostel",
+      "completed": true,
+      "description": "August 2017, Bali Trip"
+    },
+    {
+      "title": "Live for a month in Japan"
+    },
+    {
+      "title": "Design a typeface"
+    },
+    {
+      "title": "Pay for subscribption business",
+      "completed": true,
+      "description": "August 2017, Apple iCloud"
+    },
+    {
+      "title": "Buy authentic software",
+      "completed": true,
+      "description": "July 2014, Adobe CS6 Master Collection. Sadly with my Dad's money :(. Good news: I got student price so it's fraction of the original price."
+    },
+    {
+      "title": "Featured once in media"
+    },
+    {
+      "title": "Make a list of resources that will be useful"
+    },
+    {
+      "title": "Full planche"
+    },
+    {
+      "title": "Get 1,000 personal subscriber"
+    },
+    {
+      "title": "Do 10K marathon"
+    },
+    {
+      "title": "Write a book about design / javascript"
+    },
+    {
+      "title": "Interview an inspiring figure"
+    },
+    {
+      "title": "Build any iOS app and release it"
+    },
+    {
+      "title": "Build personal finance tracker on iOS"
+    },
+    {
+      "title": "A website that trade books between book lover"
+    },
+    {
+      "title": "Start a weekly / bi-weekly networking event"
+    },
+    {
+      "title": "Simple offline notes app",
+      "completed": true,
+      "description": "July 2016, First React project!"
+    },
+    {
+      "title": "Build color vault that focuses on permutation"
+    },
+    {
+      "title": "Get a gig in product photography"
+    },
+    {
+      "title": "Get a gig in product photography"
+    },
+    {
+      "title": "Live at least 2 weeks in Singapore"
+    },
+    {
+      "title": "Get a tattoo"
+    },
+    {
+      "title": "Learn how to surf",
+      "completed": true,
+      "description": "August 2017, Bali Trip"
+    },
+    {
+      "title": "Stay in Airbnb",
+      "completed": true,
+      "description": "August 2017, Bali Trip"
+    },
+    {
+      "title": "Go to Bali",
+      "completed": true,
+      "description": "August 2017, Bali Trip"
+    },
+    {
+      "title": "Create one ambitious project"
+    },
+    {
+      "title": "Charge client > $100 a month",
+      "completed": true,
+      "description": "May 2014, Logo design :)"
+    },
+    {
+      "title": "Charge client > $1,000 a month",
+      "completed": true,
+      "description": "January 2017, Freelance project!"
+    },
+    {
+      "title": "Charge client > $10,000 a month",
+      "completed": true,
+      "description": "July 2017, Contract work. Part time."
+    },
+    {
+      "title": "Charge client > $20,000 a month"
+    },
+    {
+      "title": "Charge client > $30,000 a month"
+    },
+    {
+      "title": "Remote working with client from abroad",
+      "completed": true,
+      "description": "July 2017, Got it from Twitter. :)"
+    },
+    {
+      "title": "Outreach well-known person to offer my service",
+      "completed": true,
+      "description": "January 2017, I still save the email :D"
+    },
+    {
+      "title": "Hike a mountain",
+      "description": "It's dangerous. Would love to go with someone with experience"
+    },
+    {
+      "title": "Get 1,000 organic Twitter follower"
+    },
+    {
+      "title": "Get 1,000 organic Instagram follower"
+    },
+    {
+      "title": "Write 10 articles"
+    },
+    {
+      "title": "Write 20 articles"
+    },
+    {
+      "title": "Work in coworking space for a month",
+      "completed": true,
+      "description": "August 2017, Bali Trip"
+    },
+    {
+      "title": "Work in San Fransisco / New York / Berlin"
+    }
+  ]
 }

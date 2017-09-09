@@ -1,0 +1,22 @@
+.cf.center.ph3.ph5-ns.grid
+  .fl.w-100.w-100-m.w-25-ns.ph3.mb3.mb4-m.mb0-ns.h1.dn.db-ns
+  .fl.w-100.w-100-m.w-75-ns.wow.fadeInUp
+    h1.f2.f-subheadline-ns.poppins.tracked-tight.mb4.mb5-ns.lh-title.ph3 Bucket List.
+.cf.center.ph3.ph5-ns.grid.mb4.mb5-ns.wow.fadeInUp
+  .fl.w-100.w-100-m.w-25-ns.ph3.pt0.pt4-ns
+    .cf.f6.w-100.o-60.disclaimer.b
+      .fl.w-50.w-50-m.w-100-ns.mb3
+        p.mb2.w-70 Here's a list of things I want to achieve / get in this life.
+  ul.fl.w-100.w-two-thirds-m.w-50-ns.list.pl3
+    each item, index in public._data.list
+      li.flex.items-baseline.mb2.relative
+        .absolute(style='left: -1.75rem')
+            p.f6.o-50.w1.tr #{index + 1}
+        if (item.completed)
+          .w1.h1.b--black-30.ba.br1.mr2.bg-black-20.flex-none
+        if (!item.completed)
+          .w1.h1.b--black-30.ba.br1.mr2.flex-none
+        .db
+          p.mb0 #{item.title}
+          if (item.description)
+            span.f6.o-60 #{item.description}
