@@ -256,7 +256,9 @@
       "description": "July 2017, Contract work. Part time."
     },
     {
-      "title": "Charge client > $20,000 a month"
+      "title": "Charge client > $20,000 a month",
+      "completed": true,
+      "description": "October 2017, Contract work, Full time"
     },
     {
       "title": "Charge client > $30,000 a month"
