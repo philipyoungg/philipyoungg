@@ -355,6 +355,22 @@
       "category": "Advertising",
       "description": "",
       "ISBN": "0714843377"
+    },
+    {
+      "mustRead": "1",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuvan Noah Harari",
+      "category": "Anthropology",
+      "description": "",
+      "ISBN": "0062316095"
+    },
+    {
+      "mustRead": "0",
+      "title": "Tribe of Mentors",
+      "author": "Timothy Ferris",
+      "category": "Biography",
+      "description": "",
+      "ISBN": "1328683788"
     }
   ]
 }
