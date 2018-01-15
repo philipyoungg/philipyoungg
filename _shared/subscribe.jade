@@ -2,12 +2,11 @@
   .fl.w-100.w-25-ns.dn.dn-m.db.ph3.h1
   .fl.w-100-m.w-50-ns.ph3
     .measure-wide.bw1.bt.bb.b--black-10.pv5
-      form.input-reset#mc-embedded-subscribe-form.validate(action='//philipyoungg.us13.list-manage.com/subscribe/post?u=33f874b3a49f847d9180f003c&id=97773fd0be', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+      form.input-reset(action='https://tinyletter.com/philipyoungg', method='post', target='popupwindow', onsubmit="window.open('https://tinyletter.com/philipyoungg', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true")
         p.black-70.measure-wide.mb4 Get updated about personal development topics such as: productivity, learnings, and mistakes that I made. I'll personally send them to your mailbox every week. Unsubscribe at any time.
-          span.black  🔥
+          span.black 🔥
         #mc_embed_signup_scroll
-          input.f6.b--black-20.br1.pa2.w5.mr1.outline-0.mb2.mb0-ns(style='border-width: 1px' placeholder='awesome@amazing.com' type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required)
-          div(style='position: absolute; left: -5000px;', aria-hidden='true')
-            input(type='text', name='b_33f874b3a49f847d9180f003c_97773fd0be', tabindex='-1', value='')
-          .clear.dib
-            button#mc-embedded-subscribe.f6.ba.b--black-20.pa2.br1.bg-blue.white.dim.pointer.subscribe-button(type='submit', name='subscribe') Send me! ⚡️
+          input.f5.b--black-20.br1.pa2.w5.mr1.outline-0.mb2.mb0-ns(style='border-width: 1px' placeholder='awesome@amazing.com' type="email" value="" name="email")
+          input(type='hidden', value='1', name='embed')
+        .clear.dib.mt2
+          button.f6.b.ba.b--black-20.pa2.br1.bg-blue.white.dim.pointer.subscribe-button(type='submit', name='subscribe') Get updated! ⚡
