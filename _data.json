@@ -39,7 +39,9 @@
       "title": "Get a muscular body"
     },
     {
-      "title": "Visit Yogyakarta for several days"
+      "title": "Visit Yogyakarta for several days",
+      "completed": true,
+      "description": "October 2017"
     },
     {
       "title": "3 months Eurotrip!"
@@ -65,7 +67,8 @@
       "description": "August 2017, Bali Trip"
     },
     {
-      "title": "Use couchsurving"
+      "title": "Use couchsurfing",
+      "description": "Failed to get willing host in Singapore :')"
     },
     {
       "title": "Came to one of meetup.com event"
@@ -146,7 +149,8 @@
       "title": "Sleep consistently before 10PM for a month"
     },
     {
-      "title": "Get LV Keepal Bandouliere 45 / 50"
+      "title": "Get LV Keepall Bandouliere 45 / 50",
+      "description": "Have the budget, but not sure if this is necessary..."
     },
     {
       "title": "Try to live in a hostel",
@@ -214,10 +218,9 @@
       "title": "Get a gig in product photography"
     },
     {
-      "title": "Get a gig in product photography"
-    },
-    {
-      "title": "Live at least 2 weeks in Singapore"
+      "title": "Live at least 2 weeks in Singapore",
+      "completed": true,
+      "description": "February 2018. Only a week, but it's more than enough. Testing whether I like the city. Got a job offer there."
     },
     {
       "title": "Get a tattoo"
@@ -262,6 +265,11 @@
     },
     {
       "title": "Charge client > $30,000 a month"
+    },
+    {
+      "title": "Save up $100,000",
+      "completed": true,
+      "description": "December 2017, A buffer when I have a family"
     },
     {
       "title": "Remote working with client from abroad",

@@ -23,7 +23,6 @@ html(lang='en')
     meta(name="google-site-verification" content="8_jk4EKPuEDASp4cmS5SgZSNYpl-RxRyaJPO9jF5Pq8")
     meta(name='author' content='Philip Young')
     meta(name='author-website' content='philipyoungg.com')
-    link(href='https://fonts.googleapis.com/css?family=Poppins:400,600,700|Inconsolata:400,700', rel='stylesheet')
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
     link(rel='stylesheet' href='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.css')
@@ -47,13 +46,13 @@ html(lang='en')
     // grid
     .fixed.cf.ph3.ph5-ns.w-100.vh-100.absolute-horizontal-center.grid(style='pointer-events: none')
       .fl.w-50.w-third-m.replace.w-25-ns.ph3.h-100
-        .bl.b--black-05.h-100
+        .bl.b--black-03.h-100
       .fl.w-50.w-third-m.replace.w-25-ns.ph3.h-100
-        .bl.b--black-05.h-100
+        .bl.b--black-03.h-100
       .fl.w-50.w-third-m.replace.w-25-ns.ph3.h-100
-        .bl.b--black-05.h-100
+        .bl.b--black-03.h-100
       .fl.w-50.w-third-m.replace.w-25-ns.ph3.h-100.br.b--black-05
-        .bl.b--black-05.h-100
+        .bl.b--black-03.h-100
     .vs-section
       #loading.fixed.w-100.h-100.relative.o-0(style='visibility: hidden')
         .spinner.absolute-center
@@ -79,6 +78,7 @@ html(lang='en')
           !=partial('_shared/blog-excerpt')
         else
           !=yield
+        !=partial('_shared/subscribe')
         !=partial('_shared/footer')
     script(src='https://cdn.rawgit.com/philipyoungg/external-link-to-new-tab/master/externalLinkToNewTab.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/native.history.min.js')

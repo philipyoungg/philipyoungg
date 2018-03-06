@@ -1,5 +1,9 @@
 @import url('https://rsms.me/interface/interface.css');
 
+.b--black-03 {
+  border-color: rgba(0, 0, 0, 0.03);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -624,7 +628,7 @@ img {
 
 // questionable
 h1 {
-  font-family: Poppins, Avenir Next, -apple-system, MacBlinkSystemFont, sans-serif;
+  font-family: Interface, Avenir Next, -apple-system, MacBlinkSystemFont, sans-serif;
   font-weight: 600;
   line-height: 1.1;
 }
@@ -640,7 +644,7 @@ h1 {
 }
 
 .poppins {
-  font-family: Poppins, Avenir Next, sans-serif;
+  font-family: Interface, Avenir Next, sans-serif;
 }
 
 .georgia {
@@ -696,7 +700,7 @@ p {
 .side {
   position: absolute;
   font-size: 9rem;
-  font-family: Poppins;
+  font-family: Interface;
   font-weight: 700;
   transform: rotate(-90deg);
   white-space: nowrap;
