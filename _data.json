@@ -44,7 +44,10 @@
       "description": "October 2017"
     },
     {
-      "title": "3 months Eurotrip!"
+      "title": "3 months Eurotrip!",
+      "completed": true,
+      "description": "2 Months, actually—on July to beginning of September 2018"
+      
     },
     {
       "title": "Visit New Zealand"
@@ -68,7 +71,8 @@
     },
     {
       "title": "Use couchsurfing",
-      "description": "Failed to get willing host in Singapore :')"
+      "completed": true,
+      "description": "In Berlin and Amsterdam! Super interesting experience."
     },
     {
       "title": "Came to one of meetup.com event"
@@ -189,7 +193,7 @@
       "title": "Do 10K marathon"
     },
     {
-      "title": "Write a book about design / javascript"
+      "title": "Write a book about design / programming (javascript)"
     },
     {
       "title": "Interview an inspiring figure"
@@ -262,9 +266,6 @@
       "title": "Charge client > $20,000 a month",
       "completed": true,
       "description": "October 2017, Contract work, Full time"
-    },
-    {
-      "title": "Charge client > $30,000 a month"
     },
     {
       "title": "Save up $100,000",
