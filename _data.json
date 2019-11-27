@@ -1,7 +1,7 @@
 {
   "index": {
     "title": "Designer and Maker",
-    "description": "Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co"
+    "description": "Philip Young is a product designer from Jakarta, Indonesia. Currently focusing on intersection between design and code."
   },
   "404": {
     "title": "Nothing found"
@@ -29,7 +29,8 @@
     {
       "title": "Speak in front of > 100 people"
     },
-    { "title": "Charter a private jet",
+    {
+      "title": "Charter a private jet",
       "description": "Expensive AF. But I hate airline experience that much"
     },
     {
@@ -47,7 +48,6 @@
       "title": "3 months Eurotrip!",
       "completed": true,
       "description": "2 Months, actually—on July to beginning of September 2018"
-      
     },
     {
       "title": "Visit New Zealand"
