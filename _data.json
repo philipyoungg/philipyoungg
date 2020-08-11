@@ -199,7 +199,9 @@
       "title": "Interview an inspiring figure"
     },
     {
-      "title": "Build any iOS app and release it"
+      "title": "Build any iOS app and release it",
+      "completed": true,
+      "description": "July 2020. https://www.stayinsession.com I made the cross platform app authentication, and syncing algorithm by myself!"
     },
     {
       "title": "Build personal finance tracker on iOS"
@@ -245,7 +247,9 @@
       "description": "August 2017, Bali Trip"
     },
     {
-      "title": "Create one ambitious project"
+      "title": "Create one ambitious project",
+      "completed": true,
+      "description": "July 2020 https://www.stayinsession.com primarily because I made the syncing algorithm, authentication, and handling server side by myself!"
     },
     {
       "title": "Charge client > $100 a month",
@@ -287,7 +291,9 @@
       "description": "It's dangerous. Would love to go with someone with experience"
     },
     {
-      "title": "Get 1,000 organic Twitter follower"
+      "title": "Get 1,000 organic Twitter follower",
+      "completed": true,
+      "description": "May 2020"
     },
     {
       "title": "Get 1,000 organic Instagram follower"
