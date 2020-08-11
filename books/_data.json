@@ -1,16 +1,16 @@
 {
   "index": {
     "title": "Books",
-    "description": "Philip Young is a product designer from Jakarta, Indonesia. Currently working as Product Lead Design at Bukapintu.co"
+    "description": "Philip Young is a product designer from Jakarta, Indonesia"
   },
   "books": [
     {
-        "mustRead": "1",
-        "title": "How to Make Sense of Any Mess: Information Architecture for Everybody",
-        "author": "Abby Covert",
-        "category": "Information Management",
-        "description": "",
-        "ISBN": "1500615994"
+      "mustRead": "1",
+      "title": "How to Make Sense of Any Mess: Information Architecture for Everybody",
+      "author": "Abby Covert",
+      "category": "Information Management",
+      "description": "",
+      "ISBN": "1500615994"
     },
     {
       "mustRead": "1",
